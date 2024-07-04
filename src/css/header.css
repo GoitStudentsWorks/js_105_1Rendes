@@ -1,0 +1,60 @@
+.header-div {
+  position: absolute;
+  width: 100%;
+}
+.header-container {
+  display: flex;
+  justify-content: center;
+  gap: 143px;
+  padding: 32px;
+}
+@media (min-width: 768px) {
+  .header-container {
+    gap: 150px;
+  }
+}
+@media (min-width: 1440px) {
+  .header-container {
+    gap: 487px;
+  }
+}
+.header-hidden {
+  display: none;
+}
+.logo-div {
+  display: flex;
+  align-items: start;
+  gap: 8px;
+  background-color: grey;
+}
+.header-pic {
+  display: flex;
+  width: 80px;
+  height: 80px;
+}
+.header-menubtn {
+  width: 60px;
+  height: 40px;
+  background-color: transparent;
+  text-decoration: underline;
+  font-size: 16px;
+  color: #fafafa;
+  padding: 10px;
+  background-color: grey;
+}
+.logo-sign {
+  color: #fafafa;
+  height: 20px;
+  width: 84px;
+  letter-spacing: 0.15vh;
+  background-color: red;
+}
+.order-button {
+  box-sizing: border-box;
+  height: 55px;
+  padding: 18px 24px;
+  border-radius: 60px;
+  background-color: #ed3b44;
+  color: #fafafa;
+  font-size: 16px;
+}
