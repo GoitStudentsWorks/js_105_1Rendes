@@ -14,7 +14,10 @@ body {
   font-family: 'Inter Tight', sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
-  font-style: normal;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: #1c1d20;
+  background-color: #1c1d20;
   margin: 0;
 }
 

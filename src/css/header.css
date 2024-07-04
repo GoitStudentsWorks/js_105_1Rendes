@@ -6,7 +6,6 @@
   display: flex;
   justify-content: center;
   gap: 143px;
-  padding: 32px;
 }
 @media (min-width: 768px) {
   .header-container {
