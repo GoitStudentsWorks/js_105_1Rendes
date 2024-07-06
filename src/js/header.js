@@ -8,8 +8,8 @@ menuBtn.addEventListener('click', () =>
   headerMenu.classList.toggle('header-hidden')
 );
 mobMenuBtn.addEventListener('click', () =>
-  headerMobMenu.classList.toggle('header-hidden')
+  headerMobMenu.classList.toggle('header-mob-hidden')
 );
 headerCloseIcon.addEventListener('click', () =>
-  headerMobMenu.classList.toggle('header-hidden')
+  headerMobMenu.classList.toggle('header-mob-hidden')
 );
