@@ -1,0 +1,60 @@
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.content {
+    position: relative;
+    min-width: 320px;
+    height: 508px;
+    background-image: url(../img/cover/Rectangle\ 13.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.marquee {
+    position: absolute;
+    right: -1700px;
+    left: 0;
+    
+}
+
+.marquee__inner {
+    display: flex;
+    transform: rotate(17deg);
+    gap: 45px;
+    
+}
+
+.marquee__line {
+    display: flex;
+    transform: rotate(17deg);
+    gap: 45px;
+    flex-shrink: 0;
+    white-space: nowrap;
+    animation-name: marqueeLine;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    width: 282px;
+    margin-bottom: 20px;
+    
+    
+    
+}
+
+@keyframes marqueeLine {
+    from {
+        transform: translateX(-20%);
+    }
+
+    to {
+        transform: translateX(-180%);
+    }
+}
+@media (min-width: 768px) {}
+@media (min-width: 1440px) {}
