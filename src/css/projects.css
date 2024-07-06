@@ -101,5 +101,18 @@
     margin: 0 auto;
   }
   @media (min-width: 1440px) {
+    .project-text-box {
+      padding: 64px 130px 64px 64px;
+    }
+    .project-image-box {
+      min-width: 688px;
+    }
+    .swiper-slide.project-item {
+      display: flex;
+    }
+
+    .project-hashtag:last-child {
+      margin-bottom: 223px;
+    }
   }
 }
