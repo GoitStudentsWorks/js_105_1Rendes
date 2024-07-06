@@ -18,6 +18,13 @@
     gap: 487px;
   }
 }
+.logo-sign {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24.2px;
+  letter-spacing: -0.02em;
+  text-align: left;
+}
 .logo-div {
   display: flex;
   align-items: start;
@@ -65,6 +72,10 @@
 }
 .header-menu-list {
   text-align: center;
+}
+.header-menulist-item:hover {
+  color: #ed3b44;
+  text-decoration: underline;
 }
 .logo-sign {
   color: #fafafa;
