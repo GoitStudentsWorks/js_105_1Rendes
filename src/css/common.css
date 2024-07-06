@@ -2,16 +2,32 @@
   max-width: 375px;
   margin: 0 auto;
   box-sizing: border-box;
+  padding: 0 16px;
 }
 
 @media (min-width: 768px) {
   .container {
     max-width: 768px;
+    padding: 0 32px;
   }
 }
 
 @media (min-width: 1440px) {
   .container {
     max-width: 1440px;
+  }
+}
+.section {
+  padding-bottom: 64px;
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding-bottom: 96px;
+  }
+}
+@media (min-width: 1440px) {
+  .section {
+    padding-bottom: 164px;
   }
 }
