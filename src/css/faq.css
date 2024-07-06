@@ -15,7 +15,7 @@
 #ac-trigger::after {
   content: '';
   box-sizing: border-box;
-  background-image: url(../img/icon.svg);
+  background-image: url(/img/icon.svg);
   background-size: auto;
   background-repeat: no-repeat;
   background-position: center center;
