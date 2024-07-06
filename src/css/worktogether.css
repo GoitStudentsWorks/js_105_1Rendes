@@ -95,13 +95,10 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  transition: border 250ms ease-in-out;
 }
 
-.footer-address-link-email:hover {
-  border: 1px solid #fafafa;
-}
-
-.footer-address-link-tel:hover {
+.footer-address-link:hover {
   border: 1px solid #fafafa;
 }
 .footer-container {
