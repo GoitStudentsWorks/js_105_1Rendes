@@ -37,7 +37,7 @@
     flex-shrink: 0;
     white-space: nowrap;
     animation-name: marqueeLine;
-    animation-duration: 10s;
+    animation-duration: 15s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     width: 282px;
@@ -56,5 +56,33 @@
         transform: translateX(-180%);
     }
 }
-@media (min-width: 768px) {}
-@media (min-width: 1440px) {}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 768px;
+        padding: 0 32px;
+    }
+    
+}
+
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1440px;
+    }
+}
+
+.section {
+    padding-bottom: 64px;
+}
+
+@media (min-width: 768px) {
+    .section {
+        padding-bottom: 96px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .section {
+        padding-bottom: 164px;
+    }
+}
