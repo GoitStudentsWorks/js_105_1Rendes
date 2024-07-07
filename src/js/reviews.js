@@ -1,6 +1,6 @@
 import axios from 'axios';
-import Swiper from 'swiper';
-import 'swiper/css';
+import Swiper from 'swiper/bundle';
+import 'swiper/css/bundle';
 
 const reviewsContainer = document.querySelector('.reviews-box');
 const listContainer = reviewsContainer.querySelector('.swiper-wrapper');
@@ -27,29 +27,49 @@ async function getReviews() {
             reviewsContainer.innerHTML = '<p class="review-error">Not found</p>';
             return;
         }
-        const markup = reviewsData.map(({ author, avatar_url, review }) => {
+        const markup = reviewsData.map(({ _id, author, avatar_url, review }) => {
             return `
                 <li class="review-item swiper-slide">
-                    <div class="review-photo">
+                <div class="review-swiper-window ">    
+                <div class="review-photo">
                         <img src="${avatar_url}" alt='${author}' class="avatar">
                     </div>
                     <div class="review-content">
-                        <h3 class="author">${author}</h3>
-                        <p class="text">${review}</p>
+                        <h3 class="review-author">${author}</h3>
+                        <p class="review-text">${review}</p>
+                    </div>
                     </div>
                 </li>`;
         }).join('');
         
         listContainer.innerHTML = markup;
-        const swiper = new Swiper('.swiper', {
+        const swiper = new Swiper('.reviews-box', {
     direction: 'horizontal',
-    loop: true,
-    loopAdditionalSlides: 1,
+    loop: false,
     speed: 400,
-    spaceBetween: 30,
-  
-  });
+    slidesPerView: 1,
+    spaceBetween: 16,
+    
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    keyboard: {
+                enabled: true,
+                onlyInViewport: true,
+            },
+            breakpoints: {
+        768: {
+            slidesPerView: 2,
+        },
+        1440: {
+            slidesPerView: 4,
+        },
     }
+        
+  });
+
+}
     catch (error) {
         alert('Error rendering reviews');
         console.error('Error rendering reviews:', error);

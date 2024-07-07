@@ -1,36 +1,35 @@
-.title {
+.project-title {
   font-weight: 600;
   line-height: 1.5;
   text-transform: uppercase;
   color: rgba(250, 250, 250, 0.4);
-  margin: 0;
-}
-.swiper {
-  background-color: #fafafa;
-  border-radius: 24px;
-}
-.swiper-slide {
-  display: block;
+  margin-bottom: 32px;
 }
 
-.text-box {
+.project-text-box {
+  background-color: #fafafa;
   padding: 32px;
 }
-.hashtag {
+.swiper-slide.project-item {
+  box-sizing: border-box;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.project-hashtag {
   display: inline-block;
   border: 1px solid rgba(28, 29, 32, 0.2);
   border-radius: 60px;
   padding: 13px 18px;
 }
-.hashtag:not(:last-child) {
+.project-hashtag:not(:last-child) {
   margin-right: 6px;
   margin-bottom: 6px;
 }
-.hashtag:last-child {
+.project-hashtag:last-child {
   margin-bottom: 96px;
 }
-.subtitle {
-  font-family: 'Inter Tight', sans-serif;
+.project-subtitle {
   font-weight: 500;
   font-size: 24px;
   line-height: 1.17;
@@ -55,14 +54,65 @@
   transform: scale(1.05);
 }
 
-.project-image {
+.project-image-box {
   background-color: #242527;
   padding: 100px 0;
 }
 
-.project-image div {
-  background-color: white;
-  max-width: 311px;
-  height: 195px;
+.project-image {
   margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .project-title {
+    font-weight: 600;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: rgba(250, 250, 250, 0.4);
+    margin-bottom: 32px;
+  }
+  .project-text-box {
+    padding: 64px;
+  }
+  .project-hashtag {
+    padding: 18px;
+  }
+  .project-hashtag:not(:last-child) {
+    margin-right: 6px;
+    margin-bottom: 0;
+  }
+  .project-hashtag:last-child {
+    margin-bottom: 164px;
+  }
+  .project-subtitle {
+    font-size: 44px;
+    line-height: 1;
+    margin-bottom: 32px;
+  }
+  .project-link {
+    padding: 18px 50px;
+  }
+
+  .project-image-box {
+    padding: 120px 0;
+  }
+
+  .project-image {
+    margin: 0 auto;
+  }
+  @media (min-width: 1440px) {
+    .project-text-box {
+      padding: 64px 130px 64px 64px;
+    }
+    .project-image-box {
+      min-width: 688px;
+    }
+    .swiper-slide.project-item {
+      display: flex;
+    }
+
+    .project-hashtag:last-child {
+      margin-bottom: 223px;
+    }
+  }
 }
