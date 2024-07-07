@@ -1,8 +1,7 @@
 import axios from 'axios';
 import Swiper from 'swiper/bundle';
 import 'swiper/css';
-import { getDisabledOrEnabledButtons, getControlledSwiperByTab, isInView,} from "./projects";
-
+import{getDisabledOrEnabledButtons, getControlledSwiperByTab, isInView} from "./sliders"
 const nextButton = document.querySelector('.next-slide');
   const prevButton = document.querySelector('.prev-slide');
 const reviewsContainer = document.querySelector('.reviews-box');
