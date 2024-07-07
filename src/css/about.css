@@ -4,9 +4,8 @@
 }
 .about-container {
   color: #fafafa;
-line-height: 1.5;
-color: #fafafa;
-
+  line-height: 1.5;
+  color: #fafafa;
 }
 .container {
 }
@@ -22,16 +21,15 @@ color: #fafafa;
 
 .about-us-text-box {
   border-radius: 24px;
-padding: 32px;
-background: #242527;
+  padding: 32px;
+  background: #242527;
 }
 
 .about-main-text {
-font-size: 24px;
-line-height: 1.16667;
-letter-spacing: -0.03em;
-text-transform: uppercase;
-
+  font-size: 24px;
+  line-height: 1.16667;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
 }
 .about-red-text-span {
   color: rgba(237, 59, 68);
@@ -43,15 +41,13 @@ text-transform: uppercase;
 }
 .about-list {
 }
-.accordion-container {
-}
 .about-list-item {
 }
 .about-list-title {
   font-weight: 600;
-text-transform: uppercase;
-color: rgba(250, 250, 250, 0.4);
-margin-bottom: 24px;
+  text-transform: uppercase;
+  color: rgba(250, 250, 250, 0.4);
+  margin-bottom: 24px;
 }
 .about-list-text {
 }
@@ -60,7 +56,6 @@ margin-bottom: 24px;
 }
 .about-skills-list {
   /* display: flex; */
-
 }
 
 .about-skills-list-item {
@@ -71,29 +66,32 @@ margin-bottom: 24px;
   height: 130px;
   border-radius: 50%;
   background: #ed3b44;
-  border: 1px solid rgba(250, 250, 250, 0.4);}
-
+  border: 1px solid rgba(250, 250, 250, 0.4);
+}
 
 @media (min-width: 768px) {
   .about-main-text {
-    font-size: 38px;}
-    .about-us-text-box {
-      min-height: 700px;
-      padding: 64px;
-    }
-.about-skills-list-item {
-  width: 200px;
-  height: 200px;
+    font-size: 38px;
+  }
+  .about-us-text-box {
+    min-height: 700px;
+    padding: 64px;
+  }
+  .about-skills-list-item {
+    width: 200px;
+    height: 200px;
+  }
 }
-  }
 
-  @media (min-width: 1440px){
-    .about-wrap {
-      align-items: stretch;
-      flex-wrap: nowrap;
-    }
-    .about-wrap > * { flex: 0 0 50%};
-    .about-us-text-box {
-      min-height: unset;
-    }
+@media (min-width: 1440px) {
+  .about-wrap {
+    align-items: stretch;
+    flex-wrap: nowrap;
   }
+  .about-wrap > * {
+    flex: 0 0 50%;
+  }
+  .about-us-text-box {
+    min-height: unset;
+  }
+}
