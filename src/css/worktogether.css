@@ -1,10 +1,3 @@
-.footer-container {
-  padding-top: 32px;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-bottom: 32px;
-}
-
 .footer-titel-img {
   border-radius: 12px;
   width: 44px;
@@ -83,15 +76,11 @@
 
 .footer-address {
   padding-top: 64px;
-}
-
-.footer-address-list {
   display: flex;
   flex-wrap: nowrap;
   gap: 4px;
 }
-
-.footer-address-link-email {
+.footer-address-link {
   font-family: 'Inter Tight', sans-serif;
   font-weight: 500;
   font-size: 13px;
@@ -101,38 +90,20 @@
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 60px;
   padding: 10px 12px;
-  width: 178px;
+  width: fit-content;
   height: 37px;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  transition: border 250ms ease-in-out;
 }
 
-.footer-address-link-email:hover {
+.footer-address-link:hover {
   border: 1px solid #fafafa;
 }
-
-.footer-address-link-tel {
-  font-family: 'Inter Tight', sans-serif;
-  font-weight: 500;
-  font-size: 13px;
-  letter-spacing: -0.02em;
-  color: #fafafa;
-  font-style: normal;
-  border: 1px solid rgba(250, 250, 250, 0.2);
-  border-radius: 60px;
-  padding: 10px 12px;
-  width: 118px;
-  height: 37px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+.footer-container {
+  padding-bottom: 32px;
 }
-
-.footer-address-link-tel:hover {
-  border: 1px solid #fafafa;
-}
-
 /* ==================== Modal ====================== */
 
 .footer-modal {
@@ -200,7 +171,6 @@
   text-align: center;
   color: rgba(250, 250, 250, 0.6);
 }
-
 @media screen and (min-width: 768px) {
   .footer-container {
     padding-top: 80px;
@@ -244,29 +214,18 @@
   }
 
   .footer-address {
-    padding-top: 78px;
-    width: 418px;
-    height: 55px;
-  }
-
-  .footer-address-list {
     gap: 8px;
-  }
-
-  .footer-address-link-email {
-    padding: 18px 32px;
-    font-size: 16px;
-    width: 239px;
+    margin-top: 18px;
+    padding-top: 0;
     height: 55px;
   }
 
-  .footer-address-link-tel {
+  .footer-address-link {
     padding: 18px 32px;
     font-size: 16px;
-    width: 171px;
+    gap: 8px;
     height: 55px;
   }
-
   .footer-modal-container {
     padding: 64px;
     width: 492px;
@@ -283,6 +242,10 @@
 }
 
 @media screen and (min-width: 1440px) {
+  .footer-container {
+    padding-left: 192px;
+    padding-right: 192px;
+  }
   .footer-form {
     gap: 0;
   }
