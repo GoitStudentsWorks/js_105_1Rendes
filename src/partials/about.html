@@ -2,17 +2,46 @@
   <div class="about-container container">
     <h2 class="title-visually-hidden">About me</h2>
     <div class="about-wrap">
-      <p class="about-main-text">
-        I WORK WITH PEOPLE ALL OVER THE WORLD TO CREATE IMPRESSIVE AND
-        <span class="about-red-text-span">FUNCTIONAL</span>
-        <span class="about-grey-text-span">WEBSITES</span> THAT REFLECT EACH
-        CLIENT'S UNIQUE PERSONALITY.
-      </p>
-      <img class="about-img" src="" alt="" />
+      <div class="about-us-text-box">
+        <p class="about-main-text">
+          I work with people all over the world to create impressive and
+          <span class="about-red-text-span">functional</span>
+          <span class="about-grey-text-span">websites</span> that reflect each
+          client's unique personality.
+        </p>
+      </div>
+
+      <picture class="about-img">
+        <source
+          srcset="
+            ./img/about/about-photo.webp    1x,
+            ./img/about/about-photo-2x.webp 2x
+          "
+          media="(min-width:1440px)"
+          type="image/webp"
+        />
+        <source
+          srcset="
+            ./img/about/about-photo-tab.webp    1x,
+            ./img/about/about-photo-tab-2x.webp 2x
+          "
+          media="(min-width:768px)"
+          type="image/webp"
+        />
+        <source
+          srcset="
+            ./img/about/about-photo-mob.webp    1x,
+            ./img/about/about-photo-mob-2x.webp 2x
+          "
+          media="(min-width:365px)"
+          type="image/webp"
+        />
+        <img src="./img/about/about-photo.webp" alt="my-photo" />
+      </picture>
     </div>
     <ul class="about-list accordion-container">
       <li class="about-list-item">
-        <h3 class="about-list-title">ABOUT ME</h3>
+        <h3 class="about-list-title">About me</h3>
         <ul class="about-list-text">
           <li class="about-list-text-item">
             I am Lloyd Jefferson, a talented programmer with extensive expertise
@@ -38,7 +67,7 @@
         </ul>
       </li>
       <li class="about-list-item">
-        <h3>ROLE</h3>
+        <h3 class="about-list-title">Role</h3>
         <ul class="about-list-text">
           <li class="about-list-text-item">Frontend development</li>
           <li class="about-list-text-item">HeadlessCMS,Wordpress</li>
@@ -46,7 +75,7 @@
         </ul>
       </li>
       <li class="about-list-item">
-        <h3>EDUCATION</h3>
+        <h3 class="about-list-title">Education</h3>
         <ul class="about-list-text">
           <li class="about-list-text-item">
             2018 - 2019 / Frontend Development Diploma, GoIT IT School, New York
@@ -63,12 +92,13 @@
     </ul>
 
     <ul class="about-skills-list">
-      <li>HTML/CSS</li>
-      <li>JavaScript</li>
-      <li>React</li>
-      <li>Node.js</li>
-      <li>React Native</li>
-      <li>Soft skills</li>
+      <div class="about-skills-list-item"><li>HTML/CSS</li></div>
+
+      <li class="about-skills-list-item">JavaScript</li>
+      <li class="about-skills-list-item">React</li>
+      <li class="about-skills-list-item">Node.js</li>
+      <li class="about-skills-list-item">React Native</li>
+      <li class="about-skills-list-item">Soft skills</li>
     </ul>
   </div>
 </section>
