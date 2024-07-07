@@ -1,9 +1,15 @@
 import axios from 'axios';
 import Swiper from 'swiper/bundle';
-import 'swiper/css/bundle';
+import 'swiper/css';
+import { getDisabledOrEnabledButtons, getControlledSwiperByTab, isInView,} from "./projects";
 
+const nextButton = document.querySelector('.next-slide');
+  const prevButton = document.querySelector('.prev-slide');
 const reviewsContainer = document.querySelector('.reviews-box');
-const listContainer = reviewsContainer.querySelector('.swiper-wrapper');
+const listContainer = reviewsContainer.querySelector('.reviews-list');
+const reviewSection = document.querySelector('.reviews-section')
+let swiperRev;
+renderReviews();
 
 
 async function getReviews() {
@@ -30,49 +36,66 @@ async function getReviews() {
         const markup = reviewsData.map(({ _id, author, avatar_url, review }) => {
             return `
                 <li class="review-item swiper-slide">
-                <div class="review-swiper-window ">    
+                <div class="review-swiper-window "> 
+     
                 <div class="review-photo">
                         <img src="${avatar_url}" alt='${author}' class="avatar">
                     </div>
                     <div class="review-content">
                         <h3 class="review-author">${author}</h3>
-                        <p class="review-text">${review}</p>
-                    </div>
+                         <p class="review-text">${review}</p>
+                    </div> 
                     </div>
                 </li>`;
         }).join('');
-        
         listContainer.innerHTML = markup;
-        const swiper = new Swiper('.reviews-box', {
+     
+} 
+    catch (error) {
+        alert('Error rendering reviews');
+        console.error('Error rendering reviews:', error);
+    }
+}
+
+swiperRev = new Swiper('.reviews-box', {
     direction: 'horizontal',
-    loop: false,
     speed: 400,
     slidesPerView: 1,
     spaceBetween: 16,
-    
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
     keyboard: {
                 enabled: true,
                 onlyInViewport: true,
             },
-            breakpoints: {
+            on: {
+                slideChange: function () {
+                    getDisabledOrEnabledButtons(this, prevButton, nextButton)
+                },
+            },
+    breakpoints: {
         768: {
             slidesPerView: 2,
         },
         1440: {
             slidesPerView: 4,
         },
+    },
+    });   
+  
+    if (swiperRev.isBeginning) {
+        prevButton.disabled = true;
     }
-        
+ 
+    getControlledSwiperByTab(reviewSection, swiperRev);
+
+  nextButton.addEventListener('click', () => {
+    swiperRev.slideNext();
+  });
+  prevButton.addEventListener('click', () => {
+    swiperRev.slidePrev();
   });
 
-}
-    catch (error) {
-        alert('Error rendering reviews');
-        console.error('Error rendering reviews:', error);
-    }
-}
-renderReviews();
+
+
+
+
+

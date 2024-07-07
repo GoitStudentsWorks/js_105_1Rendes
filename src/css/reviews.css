@@ -7,29 +7,31 @@
     color: rgba(250, 250, 250, 0.4);
     margin-bottom: 32px;
 }
-
+.reviews-box.swiper {
+    margin-bottom: 32px;
+}
+.reviews-list{
+    margin-bottom: 0;
+}
 .reviews-box {
     background-color: #1c1d20;
     width: 100%;  
 }
 .review-item {
-    
-    box-sizing: border-box;
-    overflow: hidden;
-   height: 310px;
-    
-    
+    box-sizing: border-box;   
 }
 .review-swiper-window {
+    overflow-y: auto;
     width: 100%;
     box-sizing: border-box; 
     border: 1px solid rgba(250, 250, 250, 0.2);
     padding: 32px 24px;
-    border-radius: 20px;
-    max-width: 100%; 
-    min-height: 348px;
+    border-radius: 20px; 
+    height: 350px;
 }
-
+.review-swiper-window::-webkit-scrollbar {
+    display: none;
+}
 .review-photo {
     border-radius: 10px;
     width: 48px;
@@ -52,48 +54,64 @@
     line-height: 1.5;
     letter-spacing: -0.02em;
     color: rgba(250, 250, 250, 0.6);
+    
+
 }
 .review-content {
-    width: 100%;
+    width: 100%;   
 }
+
 .review-buttons {
     display: flex;
     justify-content: center;
-    position: absolute;
-    bottom: 20px;
-    width: 100%;
 }
 
-.swiper-button-next,
-.swiper-button-prev {
-    border-radius: 50%;
+.prev-slide,
+.next-slide {
+    border-radius: 60px;
     padding: 14px;
     width: 52px;
     height: 52px;
-    background-color: #1c1d20;
-    border: 1px solid rgba(250, 250, 250, 0.2);
-    color: white;
-}
-.swiper-button-prev {
-    margin-right: 10px;
-}
-.swiper-button-prev:hover,
-.swiper-button-next:hover {
+    background-color: transparent;
     border: 1px solid rgba(250, 250, 250, 0.5);
+    
 }
+.prev-slide {
+    margin-right: 12px; 
+}
+.prev-slide:hover,
+.next-slide:hover {
+    cursor: pointer;
+}
+button:disabled {
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    .reviews-icon {
+        stroke: #3b3b3b;
+      }
+}
+.reviews-icon {
+    stroke: #FAFAFA;
+    fill: transparent;  
+    
+    }
 
 /* media tablet */
 
 @media screen and (min-width: 768px) {
-    .review-item {
-        margin-bottom: 164px;
-    }
+    .prev-slide,
+    .next-slide {
+        border-radius: 60px;
+        padding: 18px;
+        width: 68px;
+        height: 68px;
+}
+.reviews-icon {
+    width: 32px;
+    height: 32px;
+}
 }
 
 /* media desktop */
 
 @media screen and (min-width: 1440px) {
-    .review-item {
-        margin-bottom: 140px;
-    } 
 }
