@@ -3,11 +3,14 @@ import 'swiper/css';
 
 const prevBtnProjects = document.querySelector('.projects-prev-btn');
 const nextBtnProjects = document.querySelector('.projects-next-btn');
+const projectsSection = document.querySelector('#projects');
+
+export let isInView = false;
 
 const swiperProjects = new Swiper('.project-swiper', {
   direction: 'horizontal',
   speed: 1500,
-  spaceBetween: 30,
+  spaceBetween: 80,
   centerInsufficientSlides: true,
   centeredSlidesBounds: true,
   grabCursor: true,
@@ -24,18 +27,26 @@ const swiperProjects = new Swiper('.project-swiper', {
       getDisabledOrEnabledButtons(this, prevBtnProjects, nextBtnProjects);
     },
   },
-  // allowSlidePrev: true,
-  // allowSlideNext,
-  // effect: 'coverflow',
-  // coverflowEffect: {
-  //   rotate: 30,
-  //   slideShadows: true,
-  // },
+
+  effect: 'coverflow',
+  coverflowEffect: {
+    rotate: 30,
+    slideShadows: true,
+  },
 });
 
 if (swiperProjects.isBeginning) {
   prevBtnProjects.disabled = true;
 }
+
+prevBtnProjects.addEventListener('click', () => {
+  swiperProjects.slidePrev();
+});
+nextBtnProjects.addEventListener('click', () => {
+  swiperProjects.slideNext();
+});
+
+getControlledSwiperByTab(projectsSection, swiperProjects);
 
 export function getDisabledOrEnabledButtons(t, prev, next) {
   if (t.isBeginning) {
@@ -48,9 +59,28 @@ export function getDisabledOrEnabledButtons(t, prev, next) {
   }
 }
 
-prevBtnProjects.addEventListener('click', () => {
-  swiperProjects.slidePrev();
-});
-nextBtnProjects.addEventListener('click', () => {
-  swiperProjects.slideNext();
-});
+export function getControlledSwiperByTab(Section, swiper) {
+  const observer = new IntersectionObserver(
+    entries => {
+      entries.forEach(entry => {
+        isInView = entry.isIntersecting;
+      });
+    },
+    {
+      threshold: 0.95,
+    }
+  );
+  observer.observe(Section);
+
+  document.addEventListener('keydown', function (event) {
+    // getControlledSwiperByTab(projectsSection);
+    if (event.key === 'Tab' && isInView) {
+      event.preventDefault();
+      if (event.shiftKey) {
+        swiper.slidePrev();
+      } else {
+        swiper.slideNext();
+      }
+    }
+  });
+}
