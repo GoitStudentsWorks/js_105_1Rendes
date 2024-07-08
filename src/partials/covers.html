@@ -1,12 +1,30 @@
 <section class="section-cover section">
-  <img
+ <picture class="covers-img">
+              <source
+                srcset="
+                  ./img/cover/card-10@1x.webp 1x,
+                  ./img/cover/card-10@2x.webp 2x
+                "
+                media="(min-width: 768px)"
+                loading="lazy"
+              />
+              <source
+                src
+                srcset="
+                  ./img/cover/card-10@1x.webp 1x,
+                  ./img/cover/card-10@2x.webp 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img
                 class="basic-img"
-                src="../img/cover/card-1@1x.webp"
+                src="./img/cover/card-10@1x.webp"
                 alt="Card-1"
                 width="282"
                 height="162"
                 loading="lazy"
               />
+            </picture>
   <img
                 class="basic-img"
                 src="./img/cover/card-10@1x.webp"
