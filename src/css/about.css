@@ -5,7 +5,6 @@
 .about-container {
   color: #fafafa;
   line-height: 1.5;
-  color: #fafafa;
 }
 .container {
 }
@@ -39,11 +38,13 @@
 }
 .about-img {
 }
-.about-list {
+
+/* accordion */
+
+.container-second {
+  margin-bottom: 32px;
 }
-.about-list-item {
-}
-.about-list-title {
+#about-ac-header {
   font-weight: 600;
   text-transform: uppercase;
   color: rgba(250, 250, 250, 0.4);
@@ -51,7 +52,9 @@
 }
 .about-list-text {
 }
-.about-list-text-item {
+#about-ac-text {
+  color: #fafafa;
+  line-height: 1.5;
   margin-bottom: 16px;
 }
 .about-skills-list {
@@ -69,29 +72,56 @@
   border: 1px solid rgba(250, 250, 250, 0.4);
 }
 
+
 @media (min-width: 768px) {
   .about-main-text {
     font-size: 38px;
   }
+
   .about-us-text-box {
     min-height: 700px;
     padding: 64px;
   }
+
   .about-skills-list-item {
     width: 200px;
     height: 200px;
   }
+
+  .container-second {
+    margin-bottom: 64px;
+  }
 }
+
 
 @media (min-width: 1440px) {
   .about-wrap {
     align-items: stretch;
     flex-wrap: nowrap;
   }
+
   .about-wrap > * {
     flex: 0 0 50%;
   }
+
   .about-us-text-box {
     min-height: unset;
   }
+
+  #about-ac-panel {
+   display: flex;
+   justify-content: flex-end;
+   /* margin-right: 68px; */
+  }
+
+  #about-ac-wrap {
+    flex: 0 0 50%;
+    padding-right: 68px;
+    
+  }
+
+  .container-second {
+    margin-bottom: 96px;
+  }
+  
 }
