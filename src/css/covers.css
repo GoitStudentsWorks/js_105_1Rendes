@@ -9,6 +9,7 @@
     padding-right: 0;    
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center center;
     background-attachment: fixed;
     background-image: url(../img/cover/fon-mob@1x.webp);
 }
@@ -105,7 +106,7 @@
     .section-cover .marquee-line {
         margin-right: 50px;
     }
-        .container.covers-container {
+    .container.covers-container {
             background-image: url(../img/cover/fon-tab@1x.webp);
         }
     
