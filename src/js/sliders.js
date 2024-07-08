@@ -1,9 +1,10 @@
-export const refs = {
+export const refsProj = {
   projectsSection: document.querySelector('#projects'),
-  boxArrows: document.querySelector('.js-box-arrows'),
+  boxArrows: document.querySelector('.swiper-box-arrows'),
+  prevBtnProjects: document.querySelector('.swiper-prev-btn'),
+  nextBtnProjects: document.querySelector('.swiper-next-btn'),
 };
-export let prevBtnProjects;
-export let nextBtnProjects;
+
 export let isInView = false;
 
 export function getDisabledOrEnabledButtons(t, prev, next) {
@@ -42,29 +43,27 @@ export function getControlledSwiperByTab(Section, swiper) {
   });
 }
 
-export function onDOMContentLoaded(swiper, box) {
-  const markup = `<button class="js-prev-btn">
-          <svg class="js-prev-arrow">
-            <use href="./img/icons.svg#arrow-left"></use>
-          </svg>
-        </button>
-        <button class="js-next-btn">
-          <svg class="js-next-arrow">
-            <use href="./img/icons.svg#arrow-right"></use>
-          </svg>
-        </button>`;
-  box.insertAdjacentHTML('afterbegin', markup);
-  prevBtnProjects = box.querySelector('.js-prev-btn');
-  nextBtnProjects = box.querySelector('.js-next-btn');
-  prevBtnProjects.addEventListener('click', () => {
-    swiper.slidePrev();
-  });
-  nextBtnProjects.addEventListener('click', () => {
-    swiper.slideNext();
-  });
+// export function onDOMContentLoaded(swiper, box, setButtonsCallback) {
+//   const markup = `<button class="js-prev-btn">
+//           <svg class="js-prev-arrow">
+//             <use href="./img/icons.svg#arrow-left"></use>
+//           </svg>
+//         </button>
+//         <button class="js-next-btn">
+//           <svg class="js-next-arrow">
+//             <use href="./img/icons.svg#arrow-right"></use>
+//           </svg>
+//         </button>`;
+//   box.insertAdjacentHTML('afterbegin', markup);
 
-  getDisabledPrevArrow(swiper, prevBtnProjects);
-}
+//   prevBtnProjects.addEventListener('click', () => {
+//     swiper.slidePrev();
+//   });
+//   nextBtnProjects.addEventListener('click', () => {
+//     swiper.slideNext();
+//   });
+//   getDisabledPrevArrow(swiper, prevBtnProjects);
+// }
 
 export function getDisabledPrevArrow(swiper, button) {
   if (swiper.isBeginning) {

@@ -4,6 +4,7 @@
 .project-title {
   font-weight: 600;
   line-height: 1.5;
+  font-size: 16px;
   text-transform: uppercase;
   color: rgba(250, 250, 250, 0.4);
   margin-bottom: 32px;
@@ -66,15 +67,15 @@
   margin: 0 auto;
 }
 /* Styles for arrows on projects and review  sections mobile version*/
-.js-box-arrows {
+.swiper-box-arrows {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: transparent;
 }
 
-.js-prev-btn,
-.js-next-btn {
+.swiper-prev-btn,
+.swiper-next-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -85,23 +86,18 @@
   margin-right: 12px;
   background-color: inherit;
 }
-.js-prev-btn:disabled,
-.js-next-btn:disabled {
+.swiper-prev-btn:disabled,
+.swiper-next-btn:disabled {
   border: 1px solid rgba(250, 250, 250, 0.2);
 
-  .js-prev-arrow,
-  .js-next-arrow {
+  .swiper-prev-arrow,
+  .swiper-next-arrow {
     stroke: #3b3b3b;
   }
 }
 
-.js-prev-btn:hover,
-.projects-next-box:hover {
-  cursor: pointer;
-}
-
-.js-prev-arrow,
-.js-next-arrow {
+.swiper-prev-arrow,
+.swiper-next-arrow {
   stroke: #fafafa;
   fill: transparent;
   width: 24px;
@@ -147,8 +143,8 @@
     margin: 0 auto;
   }
 
-  .js-next-btn,
-  .js-prev-btn {
+  .swiper-next-btn,
+  .swiper-prev-btn {
     max-width: 68px;
     padding: 18px;
   }
