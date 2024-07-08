@@ -1,0 +1,192 @@
+#ac-trigger {
+  color: #fafafa;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  background-color: #1c1d20;
+  font-family: 'Inter Tight', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: -0.02em;
+  text-align: left;
+}
+.section-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: rgba(250, 250, 250, 0.4);
+  margin-left: 0;
+  margin-bottom: 32px;
+}
+
+#ac-trigger::after {
+  content: '';
+}
+.ac-icon {
+  border: 1px solid #494949;
+  border-radius: 50%;
+  padding: 7px;
+  min-width: 34px;
+  height: 34px;
+  rotate: 180deg;
+  transition: rotate 250ms ease-in-out;
+}
+#ac-first.is-active > #ac-header #ac-trigger .ac-icon {
+  rotate: 0deg;
+}
+#ac.is-active > #ac-header #ac-trigger .ac-icon {
+  rotate: 0deg;
+}
+#ac-1.is-active > #ac-header #ac-trigger .ac-icon {
+  rotate: 0deg;
+}
+#ac-2.is-active > #ac-header #ac-trigger .ac-icon {
+  rotate: 0deg;
+}
+#ac-3.is-active > #ac-header #ac-trigger .ac-icon {
+  rotate: 0deg;
+}
+#ac-4.is-active > #ac-header #ac-trigger .ac-icon {
+  rotate: 0deg;
+}
+#ac-5.is-active > #ac-header #ac-trigger .ac-icon {
+  rotate: 0deg;
+}
+#ac-6.is-active > #ac-header #ac-trigger .ac-icon {
+  rotate: 0deg;
+}
+
+#ac {
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+}
+#ac-1 {
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: none;
+  background-color: transparent;
+  border-top: 1px solid rgba(250, 250, 250, 0.2);
+  border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+}
+#ac-2 {
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+}
+#ac-3 {
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+}
+#ac-4 {
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+}
+#ac-5 {
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+}
+#ac-6 {
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+}
+
+#ac-panel {
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: rgba(250, 250, 250, 0.6);
+  font-size: 16px;
+}
+#ac-text {
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: rgba(250, 250, 250, 0.6);
+  font-size: 16px;
+}
+@media (min-width: 768px) {
+  #ac-1 {
+    padding: 32px 0;
+  }
+  #ac-2 {
+    padding: 32px 0;
+  }
+  #ac-3 {
+    padding: 32px 0;
+  }
+  #ac-4 {
+    padding: 32px 0;
+  }
+  #ac-5 {
+    padding: 32px 0;
+  }
+  #ac-6 {
+    padding: 32px 0;
+  }
+  .ac-icon {
+    border: 1px solid #494949;
+    border-radius: 50%;
+    padding: 7px;
+    min-width: 40px;
+    height: 40px;
+    rotate: 180deg;
+    transition: rotate 250ms ease-in-out;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container-first {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .ac {
+    max-width: 50%;
+  }
+  #ac-1 {
+    padding: 32px 32px 32px 0;
+    border-right: 1px solid rgba(250, 250, 250, 0.2);
+  }
+  #ac-2 {
+    border-top: 1px solid rgba(250, 250, 250, 0.2);
+    padding: 32px 0 32px 32px;
+  }
+  #ac-3 {
+    padding: 32px 32px 32px 0;
+    border-right: 1px solid rgba(250, 250, 250, 0.2);
+  }
+  #ac-4 {
+    padding: 32px 0 32px 32px;
+  }
+  #ac-5 {
+    padding: 32px 32px 32px 0;
+    border-right: 1px solid rgba(250, 250, 250, 0.2);
+  }
+  #ac-6 {
+    padding: 32px 0 32px 32px;
+  }
+}
