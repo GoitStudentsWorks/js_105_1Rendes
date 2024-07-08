@@ -4,16 +4,21 @@
 *::after {
     box-sizing: border-box;
 }
-.container .cover-container {
+.container.cover-container {
     padding-left: 0;
-    padding-right: 0;
-    max-width: 100%;
+    padding-right: 0;    
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-image: url(../img/cover/fon-mob@1x.webp);
 }
-
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .container.covers-container {
+        background-image: url(../img/cover/fon-mob@2x.webp);
+    }
+}
 .content {
     position: relative;
     box-sizing: border-box;
@@ -26,7 +31,12 @@
     width: 282px;
     height: 163px;
 }
-
+.marquee {
+    position: absolute;
+    right: -800px;
+    left: 0;
+    overflow: hidden;
+}
 .marquee-inner {
     display: flex;
     transform: rotate(18deg);
@@ -43,75 +53,6 @@
     animation-duration: 25s;
   
 }
-
-@media screen and (min-width: 768px) {
-    .content {
-        min-width: 768px;
-        height: 960px;
-    }
-
-    .covers-img img {
-        width: 544px;
-        height: 314px;
-    }
-
-    .marquee-inner {
-        margin-bottom: 50px;
-    }
-
-    .section-cover .marquee-line {
-        margin-right: 50px;
-    }
-}
-
-@media screen and (min-width: 1440px) {
-    .content {
-        min-width: 1400px;
-    }
-}
-
-.marquee {
-    position: absolute;
-    right: -800px;
-    left: 0;
-    overflow: hidden;
-}
-
-@media screen and (min-width: 768px) {
-    .content {
-        min-width: 768px;
-        height: 960px;
-    }
-
-    .covers-img img {
-        width: 544px;
-        height: 314px;
-    }
-
-    .marquee-inner {
-        margin-bottom: 50px;
-    }
-
-    .section-cover .marquee-line {
-        margin-right: 50px;
-    }
-}
-
-@media screen and (min-width: 1440px) {
-    .content {
-        min-width: 1400px;
-    }
-}
-
-
-@media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-    .container.covers-container {
-        background-image: url(../img/cover/fon-mob@2x.webp);
-    }
-}
-
 @keyframes marqueeLineMove {
     from {
         transform: translateX(-100%);
@@ -145,6 +86,81 @@
 .marquee-inner:nth-child(5) .marquee-line {
     animation-delay: -5s;
 }
+
+@media screen and (min-width: 768px) {
+    .content {
+        min-width: 768px;
+        height: 960px;
+    }
+
+    .covers-img img {
+        width: 544px;
+        height: 314px;
+    }
+
+    .marquee-inner {
+        margin-bottom: 50px;
+    }
+
+    .section-cover .marquee-line {
+        margin-right: 50px;
+    }
+        .container.covers-container {
+            background-image: url(../img/cover/fon-tab@1x.webp);
+        }
+    
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        .container.covers-container {
+            background-image: url(../img/cover/fon-tab@2x.webp);}
+    
+}
+}
+
+@media screen and (min-width: 1440px) {
+    .content {
+        min-width: 1440px;
+    }
+    .container.covers-container {
+        background-image: url(../img/cover/fon-desktop@1x.webp);
+         }
+    
+        @media (min-device-pixel-ratio: 2),
+         (min-resolution: 192dpi),
+         (min-resolution: 2dppx) {
+    .container.covers-container {
+        background-image: url(../img/cover/fon-desktop@2x.webp);
+         }
+    
+}
+}
+
+@media screen and (min-width: 768px) {
+    .content {
+        min-width: 768px;
+        height: 960px;
+    }
+
+    .covers-img img {
+        width: 544px;
+        height: 314px;
+    }
+
+    .marquee-inner {
+        margin-bottom: 50px;
+    }
+
+    .section-cover .marquee-line {
+        margin-right: 50px;
+    }
+       
+}
+
+
+
+
+
 
 
 
