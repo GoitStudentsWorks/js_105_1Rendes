@@ -1,60 +1,171 @@
-
+/* Section cover */
 *,
 *::before,
 *::after {
     box-sizing: border-box;
 }
-
+.container.cover-container {
+    padding-left: 0;
+    padding-right: 0;    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-image: url(../img/cover/fon-mob@1x.webp);
+}
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .container.covers-container {
+        background-image: url(../img/cover/fon-mob@2x.webp);
+    }
+}
 .content {
     position: relative;
+    box-sizing: border-box;
     min-width: 320px;
     height: 508px;
-    background-image: url(../img/cover/Rectangle\ 13.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     overflow: hidden;
 }
 
+.covers-img img {
+    width: 282px;
+    height: 163px;
+}
 .marquee {
     position: absolute;
-    right: -1700px;
+    right: -800px;
     left: 0;
-    
+    overflow: hidden;
 }
-
-.marquee__inner {
+.marquee-inner {
     display: flex;
-    transform: rotate(17deg);
-    gap: 45px;
-    
+    transform: rotate(18deg);
+    margin-bottom: 25px;
+
 }
-
-.marquee__line {
-    display: flex;
-    transform: rotate(17deg);
-    gap: 45px;
+.marquee-line {
     flex-shrink: 0;
+    margin-right: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     white-space: nowrap;
-    animation-name: marqueeLine;
-    animation-duration: 10s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    width: 282px;
-    margin-bottom: 20px;
-    
-    
-    
+    animation-duration: 25s;
+  
 }
-
-@keyframes marqueeLine {
+@keyframes marqueeLineMove {
     from {
-        transform: translateX(-20%);
+        transform: translateX(-100%);
     }
 
     to {
-        transform: translateX(-180%);
+        transform: translateX(-400%);
     }
 }
-@media (min-width: 768px) {}
-@media (min-width: 1440px) {}
+
+.marquee-inner .marquee-line {
+    animation: marqueeLineMove 15s ease-in-out infinite alternate;
+}
+
+.marquee-inner:nth-child(1) .marquee-line {
+    animation-delay: -30s;
+}
+
+.marquee-inner:nth-child(2) .marquee-line {
+    animation-delay: -20s;
+}
+
+.marquee-inner:nth-child(3) .marquee-line {
+    animation-delay: -15s;
+}
+
+.marquee-inner:nth-child(4) .marquee-line {
+    animation-delay: -10s;
+}
+
+.marquee-inner:nth-child(5) .marquee-line {
+    animation-delay: -5s;
+}
+
+@media screen and (min-width: 768px) {
+    .content {
+        min-width: 768px;
+        height: 960px;
+    }
+
+    .covers-img img {
+        width: 544px;
+        height: 314px;
+    }
+
+    .marquee-inner {
+        margin-bottom: 50px;
+    }
+
+    .section-cover .marquee-line {
+        margin-right: 50px;
+    }
+    .container.covers-container {
+            background-image: url(../img/cover/fon-tab@1x.webp);
+        }
+    
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        .container.covers-container {
+            background-image: url(../img/cover/fon-tab@2x.webp);}
+    
+}
+}
+
+@media screen and (min-width: 1440px) {
+    .content {
+        min-width: 1440px;
+    }
+    .container.covers-container {
+        background-image: url(../img/cover/fon-desktop@1x.webp);
+         }
+    
+        @media (min-device-pixel-ratio: 2),
+         (min-resolution: 192dpi),
+         (min-resolution: 2dppx) {
+    .container.covers-container {
+        background-image: url(../img/cover/fon-desktop@2x.webp);
+         }
+    
+}
+}
+
+@media screen and (min-width: 768px) {
+    .content {
+        min-width: 768px;
+        height: 960px;
+    }
+
+    .covers-img img {
+        width: 544px;
+        height: 314px;
+    }
+
+    .marquee-inner {
+        margin-bottom: 50px;
+    }
+
+    .section-cover .marquee-line {
+        margin-right: 50px;
+    }
+       
+}
+
+
+
+
+
+
+
+
+
+    
+    
+
