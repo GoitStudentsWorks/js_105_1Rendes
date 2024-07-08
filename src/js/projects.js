@@ -3,15 +3,17 @@ import 'swiper/css';
 import {
   getControlledSwiperByTab,
   getDisabledOrEnabledButtons,
-  onDOMContentLoaded,
-  refs,
-  prevBtnProjects,
-  nextBtnProjects,
+  getDisabledPrevArrow,
+  refsProj,
 } from './sliders';
 
-document.addEventListener('DOMContentLoaded', () => {
-  onDOMContentLoaded(swiperProjects, refs.boxArrows);
+refsProj.prevBtnProjects.addEventListener('click', () => {
+  swiperProjects.slidePrev();
 });
+refsProj.nextBtnProjects.addEventListener('click', () => {
+  swiperProjects.slideNext();
+});
+
 
 const swiperProjects = new Swiper('.project-swiper', {
   direction: 'horizontal',
@@ -30,7 +32,11 @@ const swiperProjects = new Swiper('.project-swiper', {
   },
   on: {
     slideChange: function () {
-      getDisabledOrEnabledButtons(this, prevBtnProjects, nextBtnProjects);
+      getDisabledOrEnabledButtons(
+        this,
+        refsProj.prevBtnProjects,
+        refsProj.nextBtnProjects
+      );
     },
   },
   effect: 'coverflow',
@@ -40,4 +46,7 @@ const swiperProjects = new Swiper('.project-swiper', {
   },
 });
 
-getControlledSwiperByTab(refs.projectsSection, swiperProjects);
+getDisabledPrevArrow(swiperProjects, refsProj.prevBtnProjects);
+
+
+getControlledSwiperByTab(refsProj.projectsSection, swiperProjects);
