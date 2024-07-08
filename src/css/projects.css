@@ -1,6 +1,10 @@
+.swiper-wrapper {
+  margin-bottom: 32px;
+}
 .project-title {
   font-weight: 600;
   line-height: 1.5;
+  font-size: 16px;
   text-transform: uppercase;
   color: rgba(250, 250, 250, 0.4);
   margin-bottom: 32px;
@@ -62,10 +66,48 @@
 .project-image {
   margin: 0 auto;
 }
+/* Styles for arrows on projects and review  sections mobile version*/
+.swiper-box-arrows {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
 
+.swiper-prev-btn,
+.swiper-next-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px;
+  border: 1px solid rgba(250, 250, 250, 0.5);
+  border-radius: 60px;
+  max-width: 52px;
+  margin-right: 12px;
+  background-color: inherit;
+}
+.swiper-prev-btn:disabled,
+.swiper-next-btn:disabled {
+  border: 1px solid rgba(250, 250, 250, 0.2);
+
+  .swiper-prev-arrow,
+  .swiper-next-arrow {
+    stroke: #3b3b3b;
+  }
+}
+
+.swiper-prev-arrow,
+.swiper-next-arrow {
+  stroke: #fafafa;
+  fill: transparent;
+  width: 24px;
+  height: 24px;
+}
+/* Ended Styles for arrows on projects and review  sections mobile version*/
 @media only screen and (min-width: 768px) {
   .project-title {
     font-weight: 600;
+    font-size: 16px;
     line-height: 1.5;
     text-transform: uppercase;
     color: rgba(250, 250, 250, 0.4);
@@ -99,6 +141,12 @@
 
   .project-image {
     margin: 0 auto;
+  }
+
+  .swiper-next-btn,
+  .swiper-prev-btn {
+    max-width: 68px;
+    padding: 18px;
   }
   @media (min-width: 1440px) {
     .project-text-box {
