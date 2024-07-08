@@ -1,13 +1,22 @@
 import Swiper from 'swiper/bundle';
 import 'swiper/css';
+import {
+  getControlledSwiperByTab,
+  getDisabledOrEnabledButtons,
+  onDOMContentLoaded,
+  refs,
+  prevBtnProjects,
+  nextBtnProjects,
+} from './sliders';
 
-const prevBtnProjects = document.querySelector('.projects-prev-btn');
-const nextBtnProjects = document.querySelector('.projects-next-btn');
+document.addEventListener('DOMContentLoaded', () => {
+  onDOMContentLoaded(swiperProjects, refs.boxArrows);
+});
 
 const swiperProjects = new Swiper('.project-swiper', {
   direction: 'horizontal',
   speed: 1500,
-  spaceBetween: 30,
+  spaceBetween: 80,
   centerInsufficientSlides: true,
   centeredSlidesBounds: true,
   grabCursor: true,
@@ -24,33 +33,11 @@ const swiperProjects = new Swiper('.project-swiper', {
       getDisabledOrEnabledButtons(this, prevBtnProjects, nextBtnProjects);
     },
   },
-  // allowSlidePrev: true,
-  // allowSlideNext,
-  // effect: 'coverflow',
-  // coverflowEffect: {
-  //   rotate: 30,
-  //   slideShadows: true,
-  // },
+  effect: 'coverflow',
+  coverflowEffect: {
+    rotate: 30,
+    slideShadows: true,
+  },
 });
 
-if (swiperProjects.isBeginning) {
-  prevBtnProjects.disabled = true;
-}
-
-export function getDisabledOrEnabledButtons(t, prev, next) {
-  if (t.isBeginning) {
-    prev.disabled = true;
-  } else if (t.isEnd) {
-    next.disabled = true;
-  } else {
-    next.disabled = false;
-    prev.disabled = false;
-  }
-}
-
-prevBtnProjects.addEventListener('click', () => {
-  swiperProjects.slidePrev();
-});
-nextBtnProjects.addEventListener('click', () => {
-  swiperProjects.slideNext();
-});
+getControlledSwiperByTab(refs.projectsSection, swiperProjects);

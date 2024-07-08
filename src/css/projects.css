@@ -65,15 +65,16 @@
 .project-image {
   margin: 0 auto;
 }
-
-.projects-box-arrows {
+/* Styles for arrows on projects and review  sections mobile version*/
+.js-box-arrows {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: transparent;
 }
 
-.projects-prev-btn {
+.js-prev-btn,
+.js-next-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -84,53 +85,33 @@
   margin-right: 12px;
   background-color: inherit;
 }
-.projects-prev-btn:disabled {
+.js-prev-btn:disabled,
+.js-next-btn:disabled {
   border: 1px solid rgba(250, 250, 250, 0.2);
 
-  .projects-prev-arrow {
+  .js-prev-arrow,
+  .js-next-arrow {
     stroke: #3b3b3b;
   }
 }
 
-.projects-prev-btn:hover {
-  cursor: pointer;
-}
-
-.projects-prev-arrow {
-  stroke: #fafafa;
-  fill: transparent;
-}
-
-.projects-next-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 14px;
-  border: 1px solid rgba(250, 250, 250, 0.5);
-  border-radius: 60px;
-  max-width: 52px;
-  background-color: inherit;
-}
-
-.projects-next-btn:disabled {
-  border: 1px solid rgba(250, 250, 250, 0.2);
-
-  .projects-next-arrow {
-    stroke: #3b3b3b;
-  }
-}
-.projects-next-arrow {
-  stroke: #fafafa;
-  fill: transparent;
-}
-
+.js-prev-btn:hover,
 .projects-next-box:hover {
   cursor: pointer;
 }
 
+.js-prev-arrow,
+.js-next-arrow {
+  stroke: #fafafa;
+  fill: transparent;
+  width: 24px;
+  height: 24px;
+}
+/* Ended Styles for arrows on projects and review  sections mobile version*/
 @media only screen and (min-width: 768px) {
   .project-title {
     font-weight: 600;
+    font-size: 16px;
     line-height: 1.5;
     text-transform: uppercase;
     color: rgba(250, 250, 250, 0.4);
@@ -164,6 +145,12 @@
 
   .project-image {
     margin: 0 auto;
+  }
+
+  .js-next-btn,
+  .js-prev-btn {
+    max-width: 68px;
+    padding: 18px;
   }
   @media (min-width: 1440px) {
     .project-text-box {
