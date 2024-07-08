@@ -1,4 +1,4 @@
-/* Section cover */
+
 *,
 *::before,
 *::after {
@@ -137,25 +137,6 @@
 }
 }
 
-@media screen and (min-width: 768px) {
-    .content {
-        min-width: 768px;
-        height: 960px;
-    }
 
-    .covers-img img {
-        width: 544px;
-        height: 314px;
-    }
-
-    .marquee-inner {
-        margin-bottom: 50px;
-    }
-
-    .section-cover .marquee-line {
-        margin-right: 50px;
-    }
-       
-}
 
 
