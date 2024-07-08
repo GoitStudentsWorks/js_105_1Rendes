@@ -123,7 +123,7 @@
 }
 
 .marquee-inner .marquee-line {
-    animation: marqueeLineMove 20s ease-in-out infinite alternate;
+    animation: marqueeLineMove 15s ease-in-out infinite alternate;
 }
 
 .marquee-inner:nth-child(1) .marquee-line {
