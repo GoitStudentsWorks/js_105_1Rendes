@@ -22,7 +22,7 @@
     box-sizing: border-box;   
 }
 .review-swiper-window {
-    overflow-y: auto;
+    /* overflow-y: auto; */
     width: 100%;
     box-sizing: border-box; 
     border: 1px solid rgba(250, 250, 250, 0.2);
@@ -41,11 +41,11 @@
 }
 .review-error {
     font-weight: 500;
-    font-size: 40px;
+    font-size: 20px;
     line-height: 1;
     letter-spacing: -0.03em;
     text-transform: uppercase;
-    color: #ed3b44;
+    color: white;
 }
 .review-author {
     font-weight: 600;
