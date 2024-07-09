@@ -14,7 +14,6 @@ headerCloseIcon.addEventListener('click', () =>
   headerMobMenu.classList.toggle('header-mob-hidden')
 );
 headerMobMenu.addEventListener('click', e => {
-  console.log(e.target.nodeName);
   if (e.target.nodeName === 'A') {
     headerMobMenu.classList.toggle('header-mob-hidden');
   }

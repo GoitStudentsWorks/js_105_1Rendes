@@ -66,6 +66,9 @@ footerForm.addEventListener(`submit`, async e => {
       errorMessage.classList.remove('success-message');
       inputComment.classList.remove('correct-email');
       inputEmail.classList.remove('correct-email');
+      errorCommMessage.textContent = '';
+      errorMessage.textContent = '';
+      
       showModal();
       hideModal();
     }

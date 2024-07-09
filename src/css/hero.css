@@ -13,18 +13,18 @@
   padding-bottom: 32px;
   height: 812px;
   background-color: rgba(28, 29, 32, 1);
-  background-image: url(../img/hero/hero-mob-background.png);
+  background-image: var(--bg-image-mobile);
 }
 @media (min-width: 768px) {
   .hero-container {
     height: 1024px;
-    background-image: url(../img/hero/hero-tablet-backround.png);
+    background-image: var(--bg-image-tablet);
   }
 }
 @media (min-width: 1440px) {
   .hero-container {
     height: 900px;
-    background-image: url(../img/hero/hero-desktop-background.png);
+    background-image: var(--bg-image-default);
   }
 }
 .hero-title {

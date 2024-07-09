@@ -74,7 +74,7 @@
   text-align: center;
 }
 .header-menulist-item:hover {
-  color: #ed3b44;
+  color: var(--bg-color-hover-default);
   text-decoration: underline;
 }
 .logo-sign {
@@ -93,14 +93,14 @@
     height: 55px;
     padding: 18px 24px;
     border-radius: 60px;
-    background-color: #ed3b44;
+    background-color: var(--bg-color-default);
     color: #fafafa;
     font-size: 16px;
     scale: 1;
     transition: background-color 250ms ease-in-out, scale 250ms ease-in-out;
   }
   .header-order-button:hover {
-    background-color: #e0373f;
+    background-color: var(--bg-color-hover-default);
     scale: 1.05;
   }
 }
@@ -110,13 +110,13 @@
   height: 55px;
   padding: 18px 24px;
   border-radius: 60px;
-  background-color: #ed3b44;
+  background-color: var(--bg-color-default);
   color: #fafafa;
   font-size: 16px;
   transition: background-color 250ms ease-in-out;
 }
 .header-mob-order-button:hover {
-  background-color: #e0373f;
+  background-color: var(--bg-color-hover-default);
 }
 .header-mob-menubtn {
   display: inline;
@@ -144,7 +144,7 @@
   flex-direction: column;
   align-items: center;
   background-color: #1c1d20;
-  background-image: url(../img/header/header-mobmenu-background.webp);
+  background-image: var(--bg-image-mobile);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
