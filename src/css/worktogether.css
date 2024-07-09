@@ -113,6 +113,7 @@
   border-radius: 100%;
   background-color: #ed3b44;
   color: #fafafa;
+  transition: background-color 250ms ease-in-out, scale 250ms ease-in-out;
 }
 .incorrect-email {
   border-bottom: 1px solid #e74a3b;
@@ -123,6 +124,7 @@
 
 .footer-form-button:hover {
   background-color: #e0373f;
+  scale: 1.05;
 }
 
 .footer-address {
