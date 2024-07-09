@@ -43,28 +43,6 @@ export function getControlledSwiperByTab(Section, swiper) {
   });
 }
 
-// export function onDOMContentLoaded(swiper, box, setButtonsCallback) {
-//   const markup = `<button class="js-prev-btn">
-//           <svg class="js-prev-arrow">
-//             <use href="./img/icons.svg#arrow-left"></use>
-//           </svg>
-//         </button>
-//         <button class="js-next-btn">
-//           <svg class="js-next-arrow">
-//             <use href="./img/icons.svg#arrow-right"></use>
-//           </svg>
-//         </button>`;
-//   box.insertAdjacentHTML('afterbegin', markup);
-
-//   prevBtnProjects.addEventListener('click', () => {
-//     swiper.slidePrev();
-//   });
-//   nextBtnProjects.addEventListener('click', () => {
-//     swiper.slideNext();
-//   });
-//   getDisabledPrevArrow(swiper, prevBtnProjects);
-// }
-
 export function getDisabledPrevArrow(swiper, button) {
   if (swiper.isBeginning) {
     button.disabled = true;

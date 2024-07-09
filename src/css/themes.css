@@ -1,0 +1,42 @@
+:root {
+  --bg-image-default: url(/img/hero/hero-desktop-background.png);
+  --bg-image-tablet: url(/img/hero/hero-tablet-backround.png);
+  --bg-image-mobile: url(/img/hero/hero-mob-background.png);
+  --text-color-default: rgba(237, 59, 68);
+  --bg-color-default: #ed3b44;
+  --bg-color-hover-default: #e0373f;
+}
+.navigation-colors {
+  display: flex;
+  gap: 8px;
+}
+.box-colors {
+  background-color: var(--bg-color-green);
+  border-radius: 6px;
+  width: 50px;
+  height: 50px;
+}
+
+.box-colors:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.box-colors[data-color='red'] {
+  background-color: #ed3b44;
+}
+
+.box-colors[data-color='green'] {
+  background-color: #c6e327;
+}
+.box-colors[data-color='blue'] {
+  background-color: #0041e8;
+}
+.box-colors[data-color='coral'] {
+  background-color: #e6533c;
+}
+.box-colors[data-color='slate'] {
+  background-color: #2b4441;
+}
+.box-colors[data-color='orange'] {
+  background-color: #ff7f08;
+}
