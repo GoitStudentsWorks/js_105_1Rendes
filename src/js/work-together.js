@@ -45,13 +45,13 @@ footerForm.addEventListener(`submit`, async e => {
     inputComment.classList.remove('correct-email');
     inputComment.classList.add('incorrect-email');
     errorCommMessage.classList.remove('success-message');
-    errorCommMessage.classList.add('error-comm-message');
+    errorCommMessage.classList.add('error-message');
     errorCommMessage.textContent = 'Please, send us a message.';
     return;
   } else {
     inputComment.classList.remove('incorrect-email');
     inputComment.classList.add('correct-email');
-    errorCommMessage.classList.remove('error-comm-message');
+    errorCommMessage.classList.remove('error-message');
     errorCommMessage.classList.add('success-message');
     errorCommMessage.textContent = 'Success!';
   }
@@ -62,6 +62,10 @@ footerForm.addEventListener(`submit`, async e => {
   try {
     const data = await createPost(userEmail, userComment);
     if (data) {
+      errorCommMessage.classList.remove('success-message');
+      errorMessage.classList.remove('success-message');
+      inputComment.classList.remove('correct-email');
+      inputEmail.classList.remove('correct-email');
       showModal();
       hideModal();
     }
