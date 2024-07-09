@@ -30,8 +30,11 @@
   gap: 16px;
 }
 
+.div-email {
+  position: relative;
+}
 .footer-form-email {
-  width: 343px;
+  box-sizing: border-box;
   height: 44px;
   background-color: #1c1d20;
   border-top: none;
@@ -44,10 +47,39 @@
   line-height: 1.5;
   letter-spacing: -0.02em;
   color: #fafafa;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-
+.incorrect-email {
+  border-bottom: 1px solid #e74a3b;
+}
+.success-message {
+  color: #3cbc81;
+  position: absolute;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: -0.02em;
+  top: 49px;
+}
+.correct-email {
+  border-bottom: 1px solid #3cbc81;
+}
+.form-input {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.error-message {
+  position: absolute;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: -0.02em;
+  color: #e74a3b;
+  top: 49px;
+}
 .footer-form-comment {
-  width: 343px;
   height: 44px;
   background-color: #1c1d20;
   border-top: none;
@@ -60,18 +92,39 @@
   line-height: 1.5;
   letter-spacing: -0.02em;
   color: #fafafa;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-
+.error-comm-message {
+  position: absolute;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: -0.02em;
+  color: #e74a3b;
+  top: 49px;
+}
+.incorrect-comm {
+  border-bottom: 1px solid #e74a3b;
+}
 .footer-form-button {
   width: 100px;
   height: 100px;
   border-radius: 100%;
   background-color: #ed3b44;
   color: #fafafa;
+  transition: background-color 250ms ease-in-out, scale 250ms ease-in-out;
+}
+.incorrect-email {
+  border-bottom: 1px solid #e74a3b;
+}
+.correct-email {
+  border-bottom: 1px solid #3cbc81;
 }
 
 .footer-form-button:hover {
   background-color: #e0373f;
+  scale: 1.05;
 }
 
 .footer-address {
@@ -115,12 +168,12 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 0;
-  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 250ms ease-in-out;
 }
 
 .is-open {
   opacity: 1;
-  visibility: visible;
   pointer-events: auto;
 }
 
