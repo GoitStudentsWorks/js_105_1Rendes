@@ -45,10 +45,14 @@
   margin-bottom: 32px;
 }
 #about-ac-header {
-  font-weight: 600;
-  text-transform: uppercase;
-  color: rgba(250, 250, 250, 0.4);
   margin-bottom: 24px;
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: -0.02em;
+text-transform: uppercase;
+color: rgba(250, 250, 250, 0.4);
 }
 .about-list-text {
 }
@@ -68,10 +72,57 @@
   width: 130px;
   height: 130px;
   border-radius: 50%;
-  background: #ed3b44;
-  border: 1px solid rgba(250, 250, 250, 0.4);
+  background-color: transparent;
+  border: 1px solid rgba(250, 250, 250, 0.2);
 }
 
+.first-slide {
+background-color: #ed3b44;
+}
+
+
+.swiper-next-btn-about{
+  border-radius: 50%;
+  padding: 14px;
+  /* width: 52px;
+  height: 52px; */
+  background-color: transparent;
+  position: relative;
+  top: 9px;
+  /* border: 1px solid rgba(250, 250, 250, 0.5); */
+  
+}
+
+.swiper-next-btn-about:hover {
+  cursor: pointer;
+}
+
+.swiper-next-arrow-about {
+  stroke: #3B3B3B;
+  fill: transparent;
+  width: 28px;
+  height: 28px;
+  }
+
+  .about-swiper-wrapper {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+  
+  .about-skills-list.swiper-wrapper{
+    width: 260px;
+  }
+
+  .swiper-slide-active .about-skills-list-item{
+    background-color: #ed3b44;
+  }
+
+  div.swiper-about {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+  }
 
 @media (min-width: 768px) {
   .about-main-text {
@@ -90,6 +141,18 @@
 
   .container-second {
     margin-bottom: 64px;
+  }
+/* .swiper-next-btn-about {
+  width: 40px;
+  height: 40px;
+} */
+  .swiper-next-arrow-about {
+    width: 40px;
+    height: 40px;
+  }
+
+  .about-skills-list.swiper-wrapper{
+    width: 600px;
   }
 }
 
@@ -122,6 +185,10 @@
 
   .container-second {
     margin-bottom: 96px;
+  }
+
+  .about-skills-list.swiper-wrapper{
+    width: 1200px;
   }
   
 }

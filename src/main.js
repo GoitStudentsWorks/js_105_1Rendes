@@ -4,3 +4,4 @@ import './js/reviews.js';
 import './js/faq.js';
 import './js/cover.js';
 import './js/work-together.js';
+import './js/about.js';
