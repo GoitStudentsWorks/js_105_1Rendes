@@ -1,19 +1,34 @@
+import Hero from '../img/hero/Hero.png';
+import heroTabletGreens from '../img/hero/hero-tablet-greens.png';
+import heroMobileGreen from '../img/hero/hero-mobile-green.png';
+import heroDesktopBackground from '../img/hero/hero-desktop-background.png';
+import heroTabletBackground from '../img/hero/hero-tablet-backround.png';
+import heroMobBackground from '../img/hero/hero-mob-background.png';
+// import hero from '../img/hero/Hero.png';
+// import hero from '../img/hero/Hero.png';
+// import hero from '../img/hero/Hero.png';
+// import hero from '../img/hero/Hero.png';
+// import hero from '../img/hero/Hero.png';
+// import hero from '../img/hero/Hero.png';
+// import hero from '../img/hero/Hero.png';
+// import hero from '../img/hero/Hero.png';
+
 const colorsWebPage = {
   green: {
-    '--bg-image-default': 'url(../img/hero/Hero.png)',
+    '--bg-image-default': `url(${Hero})`,
     '--text-color-default': 'rgba(198, 227, 39, 1)',
     '--bg-color-default': '#c6e327',
     '--bg-color-hover-default': '#b2d61a',
-    '--bg-image-tablet': 'url(../img/hero/hero-tablet-greens.png)',
-    '--bg-image-mobile': 'url(../img/hero/hero-mobile-green.png)',
+    '--bg-image-tablet': `url(${heroTabletGreens})`,
+    '--bg-image-mobile': `url(${heroMobileGreen})`,
   },
   red: {
-    '--bg-image-default': 'url(../img/hero/hero-desktop-background.png)',
+    '--bg-image-default': `url(${heroDesktopBackground})`,
     '--text-color-default': 'rgba(237, 59, 68)',
     '--bg-color-default': '#ed3b44',
     '--bg-color-hover-default': '#e0373f',
-    '--bg-image-tablet': 'url(../img/hero/hero-tablet-backround.png)',
-    '--bg-image-mobile': 'url(../img/hero/hero-mob-background.png)',
+    '--bg-image-tablet': `url(${heroTabletBackground})`,
+    '--bg-image-mobile': `url(${heroMobBackground})`,
   },
   blue: {
     '--bg-image-default': 'url(../img/hero/hero-desktop-blue.png)',
