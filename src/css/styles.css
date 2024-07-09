@@ -20,6 +20,10 @@ input:-webkit-autofill:active {
   border-bottom: 1px solid rgba(250, 250, 250, 0.2);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Inter Tight', sans-serif;
   font-optical-sizing: auto;
