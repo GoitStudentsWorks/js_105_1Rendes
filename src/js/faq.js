@@ -1,11 +1,16 @@
 import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
 
-const open = document.querySelector('.ac-trigger');
-
-new Accordion(['.container-first', '.container-second'], {
+const accordionAbout = new Accordion('.container-second', {
   duration: 250,
   showMultiple: true,
 });
 
-open.click();
+const accordionFaq = new Accordion('.container-first', {
+  duration: 250,
+  showMultiple: true,
+});
+
+document.addEventListener('DOMContentLoaded', e => {
+  accordionAbout.open(0);
+});
