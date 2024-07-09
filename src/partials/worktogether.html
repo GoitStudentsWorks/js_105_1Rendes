@@ -24,24 +24,30 @@
       </h2>
     </div>
     <div>
-      <form class="footer-form" action="">
-        <input
-          type="email"
-          id=""
-          class="footer-form-email"
-          name="user-email"
-          placeholder="clients@gmail.com"
-          pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
-          required
-        />
-        <input
-          type="text"
-          id="input"
-          class="footer-form-comment"
-          name="user-comment"
-          placeholder="comments"
-          required
-        />
+      <form class="footer-form" novalidate>
+        <div class="form-input">
+          <input
+            type="email"
+            id=""
+            class="footer-form-email"
+            name="user-email"
+            placeholder="clients@gmail.com"
+            pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+            required
+          />
+          <span class="error-message"></span>
+        </div>
+        <div class="form-input">
+          <input
+            type="text"
+            id="input"
+            class="footer-form-comment"
+            name="user-comment"
+            placeholder="comments"
+            required
+          />
+          <span class="error-comm-message"></span>
+        </div>
         <button class="footer-form-button" type="submit">Send</button>
       </form>
     </div>
@@ -61,7 +67,7 @@
 <div class="footer-modal">
   <div class="footer-modal-container">
     <svg class="footer-modal-close-btn-icon" width="22" height="22">
-      <use href="../images/work-together/modal-icon-x.svg#icon-x"></use>
+      <use href="./img/icons.svg#icon-close"></use>
     </svg>
     <div class="footer-modal-text-blok">
       <h3 class="footer-modal-title">

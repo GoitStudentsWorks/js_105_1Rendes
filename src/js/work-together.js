@@ -10,22 +10,11 @@ const footerForm = document.querySelector('.footer-form');
 const inputEmail = document.querySelector('.footer-form-email');
 const inputComment = document.querySelector('.footer-form-comment');
 const footerModal = document.querySelector('.footer-modal');
+const errorMessage = document.querySelector('.error-message');
+const errorCommMessage = document.querySelector('.error-comm-message');
 const footerModalCloseBtn = document.querySelector(
   '.footer-modal-close-btn-icon'
 );
-
-// const inputElem = document.getElementById('input');
-
-// inputElem.addEventListener('input', () => {
-//   const maxLengthInput = inputElem.length;
-//   console.log(maxLengthInput);
-//   const currentLength = inputElem.value.length;
-//   console.log(currentLength);
-
-//   if (currentLength > maxLengthInput) {
-//     inputElem.value = inputElem.value.substring(maxLengthInput);
-//   }
-// });
 
 async function createPost(email, comment) {
   try {
@@ -38,6 +27,34 @@ async function createPost(email, comment) {
 
 footerForm.addEventListener(`submit`, async e => {
   e.preventDefault();
+  if (!inputEmail.checkValidity()) {
+    inputEmail.classList.remove('correct-email');
+    inputEmail.classList.add('incorrect-email');
+    errorMessage.classList.remove('success-message');
+    errorMessage.classList.add('error-message');
+    errorMessage.textContent = 'Invalid email, try again';
+    return;
+  } else {
+    inputEmail.classList.remove('incorrect-email');
+    inputEmail.classList.add('correct-email');
+    errorMessage.classList.remove('error-message');
+    errorMessage.classList.add('success-message');
+    errorMessage.textContent = 'Success!';
+  }
+  if (!inputComment.checkValidity()) {
+    inputComment.classList.remove('correct-email');
+    inputComment.classList.add('incorrect-email');
+    errorCommMessage.classList.remove('success-message');
+    errorCommMessage.classList.add('error-comm-message');
+    errorCommMessage.textContent = 'Please, send us a message.';
+    return;
+  } else {
+    inputComment.classList.remove('incorrect-email');
+    inputComment.classList.add('correct-email');
+    errorCommMessage.classList.remove('error-comm-message');
+    errorCommMessage.classList.add('success-message');
+    errorCommMessage.textContent = 'Success!';
+  }
 
   const userEmail = inputEmail.value.trim();
   const userComment = inputComment.value.trim();

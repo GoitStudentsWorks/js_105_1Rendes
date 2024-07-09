@@ -10,6 +10,16 @@
 @import url('./reviews.css');
 @import url('./worktogether.css');
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-text-fill-color: #fafafa;
+  background-color: #1c1d20;
+  transition: background-color 5000s ease-in-out 0s;
+  border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+}
+
 body {
   font-family: 'Inter Tight', sans-serif;
   font-optical-sizing: auto;
