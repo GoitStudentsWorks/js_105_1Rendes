@@ -9,6 +9,7 @@
 .navigation-colors {
   display: flex;
   gap: 8px;
+  margin-top: 12px;
 }
 .box-colors {
   background-color: var(--bg-color-green);

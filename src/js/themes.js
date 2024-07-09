@@ -4,14 +4,18 @@ import heroMobileGreen from '../img/hero/hero-mobile-green.png';
 import heroDesktopBackground from '../img/hero/hero-desktop-background.png';
 import heroTabletBackground from '../img/hero/hero-tablet-backround.png';
 import heroMobBackground from '../img/hero/hero-mob-background.png';
-// import hero from '../img/hero/Hero.png';
-// import hero from '../img/hero/Hero.png';
-// import hero from '../img/hero/Hero.png';
-// import hero from '../img/hero/Hero.png';
-// import hero from '../img/hero/Hero.png';
-// import hero from '../img/hero/Hero.png';
-// import hero from '../img/hero/Hero.png';
-// import hero from '../img/hero/Hero.png';
+import heroDesktopBlue from '../img/hero/hero-desktop-blue.png';
+import heroTabletBlues from '../img/hero/hero-tablet-blues.png';
+import heroMobileBlue from '../img/hero//hero-mobile-blue.png';
+import heroDesktopCoral from '../img/hero/hero-desktop-coral.png';
+import heroTabletCorals from '../img/hero/hero-tablet-corals.png';
+import heroMobileCoral from '../img/hero/hero-mobile-coral.png';
+import heroDesktopSlate from '../img/hero/hero-desktop-slate.png';
+import heroTabletSlates from '../img/hero/hero-tablet-slates.png';
+import heroMobileSlate from '../img/hero/hero-mobile-slate.png';
+import heroDesktopOrange from '../img/hero/hero-desktop-orange.png';
+import heroTabletOranges from '../img/hero/hero-tablet-oranges.png';
+import heroMobileOrange from '../img/hero/hero-mobile-orange.png';
 
 const colorsWebPage = {
   green: {
@@ -31,36 +35,36 @@ const colorsWebPage = {
     '--bg-image-mobile': `url(${heroMobBackground})`,
   },
   blue: {
-    '--bg-image-default': 'url(../img/hero/hero-desktop-blue.png)',
+    '--bg-image-default': `url(${heroDesktopBlue})`,
     '--text-color-default': 'rgba(0, 65, 232, 1)',
     '--bg-color-default': '#0041e8',
     '--bg-color-hover-default': '#003bcf',
-    '--bg-image-tablet': 'url(../img/hero/hero-tablet-blues.png)',
-    '--bg-image-mobile': 'url(../img/hero//hero-mobile-blue.png)',
+    '--bg-image-tablet': `url(${heroTabletBlues})`,
+    '--bg-image-mobile': `url(${heroMobileBlue})`,
   },
   coral: {
-    '--bg-image-default': 'url(../img/hero/hero-desktop-coral.png)',
+    '--bg-image-default': `url(${heroDesktopCoral})`,
     '--text-color-default': 'rgba(230, 83, 60, 1)',
     '--bg-color-default': '#e6533c',
     '--bg-color-hover-default': '#e64933',
-    '--bg-image-tablet': 'url(../img/hero/hero-tablet-corals.png)',
-    '--bg-image-mobile': 'url(../img/hero/hero-mobile-coral.png)',
+    '--bg-image-tablet': `url(${heroTabletCorals})`,
+    '--bg-image-mobile': `url(${heroMobileCoral})`,
   },
   slate: {
-    '--bg-image-default': 'url(../img/hero/hero-desktop-slate.png)',
+    '--bg-image-default': `url(${heroDesktopSlate})`,
     '--text-color-default': 'rgba(43, 68, 65, 1)',
     '--bg-color-default': '#2b4441',
     '--bg-color-hover-default': '#293f3c',
-    '--bg-image-tablet': 'url(../img/hero/hero-tablet-slates.png)',
-    '--bg-image-mobile': 'url(../img/hero/hero-mobile-slate.png)',
+    '--bg-image-tablet': `url(${heroTabletSlates})`,
+    '--bg-image-mobile': `url(${heroMobileSlate})`,
   },
   orange: {
-    '--bg-image-default': 'url(../img/hero/hero-desktop-orange.png)',
+    '--bg-image-default': `url(${heroDesktopOrange})`,
     '--text-color-default': 'rgba(255, 127, 8, 1)',
     '--bg-color-default': '#ff7f08',
     '--bg-color-hover-default': '#ff7b08',
-    '--bg-image-tablet': 'url(../img/hero/hero-tablet-oranges.png)',
-    '--bg-image-mobile': 'url(../img/hero/hero-mobile-orange.png)',
+    '--bg-image-tablet': `url(${heroTabletOranges})`,
+    '--bg-image-mobile': `url(${heroMobileOrange})`,
   },
 };
 
