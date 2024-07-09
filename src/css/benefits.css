@@ -80,6 +80,10 @@
   padding: 18px 36px;
   width: fit-content;
   background: #1c1d20;
+  transition: border 250ms ease-in-out;
+}
+.benefits-btn:hover {
+  border: 1px solid rgba(250, 250, 250, 1);
 }
 @media (min-width: 768px) {
   .benefits-content {
