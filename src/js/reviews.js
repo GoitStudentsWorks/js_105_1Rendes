@@ -29,10 +29,10 @@ async function getReviews() {
     try{
         const reviewsData = await getReviews(); 
         if (!reviewsData || reviewsData.length === 0) {
-            reviewsContainer.innerHTML = '<p class="review-error">Not found</p>';
+            throw new Error;
             return;
         }
-        const markup = reviewsData.map(({ _id, author, avatar_url, review }) => {
+        const markup = reviewsData.map(({_id, author, avatar_url, review}) => {
             return `
                 <li class="review-item swiper-slide">
                 <div class="review-swiper-window "> 
@@ -53,6 +53,7 @@ async function getReviews() {
     catch (error) {
         alert('Error rendering reviews');
         console.error('Error rendering reviews:', error);
+        reviewsContainer.innerHTML = '<p class="review-error">Not found</p>'
     }
 }
 
