@@ -84,6 +84,11 @@ function hideModal() {
   footerModalCloseBtn.addEventListener('click', () => {
     footerModal.classList.remove('is-open');
   });
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' || event.key === 'Esc') {
+      footerModal.classList.remove('is-open');
+    }
+  });
 }
 
 window.addEventListener('click', e => {
