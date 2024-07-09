@@ -25,28 +25,28 @@
     </div>
     <div>
       <form class="footer-form" novalidate>
-        <div class="form-input">
-          <input
-            type="email"
-            id=""
-            class="footer-form-email"
-            name="user-email"
-            placeholder="clients@gmail.com"
-            pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
-            required
-          />
-          <span class="error-message"></span>
-        </div>
-        <div class="form-input">
-          <input
-            type="text"
-            id="input"
-            class="footer-form-comment"
-            name="user-comment"
-            placeholder="comments"
-            required
-          />
-          <span class="error-comm-message"></span>
+        <div class="input-div">
+          <div class="form-input">
+            <input
+              type="email"
+              class="footer-form-email"
+              name="user-email"
+              placeholder="clients@gmail.com"
+              pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+              required
+            />
+            <span class="error-message"></span>
+          </div>
+          <div class="form-input">
+            <input
+              type="text"
+              class="footer-form-comment"
+              name="user-comment"
+              placeholder="comments"
+              required
+            />
+            <span class="error-comm-message"></span>
+          </div>
         </div>
         <button class="footer-form-button" type="submit">Send</button>
       </form>
