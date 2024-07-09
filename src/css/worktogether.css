@@ -103,7 +103,7 @@
 }
 
 .footer-form-button:hover {
-  background-color: #e0373f;
+  background-color: var(--bg-color-hover-default);
   scale: 1.05;
 }
 

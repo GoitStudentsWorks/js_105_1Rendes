@@ -1,7 +1,7 @@
 :root {
-  --bg-image-default: url(/img/hero/hero-desktop-background.png);
-  --bg-image-tablet: url(/img/hero/hero-tablet-backround.png);
-  --bg-image-mobile: url(/img/hero/hero-mob-background.png);
+  --bg-image-default: url(../img/hero/hero-desktop-background.png);
+  --bg-image-tablet: url(../img/hero/hero-tablet-backround.png);
+  --bg-image-mobile: url(../img/hero/hero-mob-background.png);
   --text-color-default: rgba(237, 59, 68);
   --bg-color-default: #ed3b44;
   --bg-color-hover-default: #e0373f;
