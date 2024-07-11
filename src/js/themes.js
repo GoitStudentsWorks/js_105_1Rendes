@@ -16,7 +16,7 @@ import heroMobileSlate from '../img/hero/hero-mobile-slate.png';
 import heroDesktopOrange from '../img/hero/hero-desktop-orange.png';
 import heroTabletOranges from '../img/hero/hero-tablet-oranges.png';
 import heroMobileOrange from '../img/hero/hero-mobile-orange.png';
-
+let color;//змінна-ключ
 const colorsWebPage = {
   green: {
     '--bg-image-default': `url(${Hero})`,
@@ -68,15 +68,40 @@ const colorsWebPage = {
   },
 };
 
+document.addEventListener('DOMContentLoaded', () => {
+  const dataColors = getLocalStorageData();//отримуємо обєкт дефолт або з локалстор
+  setPropertyStyle(dataColors);//змінюємо кольори
+});
 document
   .querySelector('.navigation-colors')
   .addEventListener('click', function (e) {
+    //перевірка кліку
     if (e.target.classList.contains('box-colors')) {
-      const color = e.target.getAttribute('data-color');
+      //отримуємо ключ-колір з дата атрибута
+      color = e.target.getAttribute('data-color');
       if (colorsWebPage[color]) {
-        Object.entries(colorsWebPage[color]).forEach(([key, value]) => {
-          document.documentElement.style.setProperty(key, value);
-        });
+        setLocalStorageData(colorsWebPage[color]);
+        setPropertyStyle(colorsWebPage[color]);
       }
     }
   });
+
+function getLocalStorageData() {
+  //якщо налл або андеф то дефолт кольори
+  const colorsObj = JSON.parse(localStorage.getItem('colors')) ?? setPropertyStyle(colorsWebPage.red);
+  return colorsObj;
+  
+}
+
+function setLocalStorageData(obj) {
+  //зберігаємо кольори і фон до Local Storage
+  localStorage.setItem('colors', JSON.stringify(obj));
+}
+
+function setPropertyStyle(obj) {
+  //Object.entries повертає масив масивів з обєкта -->array.ForEach([деструктуризація масиву])
+  Object.entries(obj).forEach(([key, value]) => {
+    //встановлюємо нові значення(властвість, нове значення) в CSS
+    document.documentElement.style.setProperty(key, value);
+  });
+}

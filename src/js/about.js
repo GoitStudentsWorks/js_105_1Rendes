@@ -2,7 +2,7 @@ import Swiper from "swiper";
 import 'swiper/css';
 import { getControlledSwiperByTab } from "./sliders";
 
-const aboutSection = document.querySelector('.about-section');
+const aboutSwiperBox = document.querySelector('.about-swiper-wrapper');
 const boxAbout = document.querySelector('.about-skills-list-item');
 const nextButtonAbout = document.querySelector('.swiper-next-btn-about');
 
@@ -50,5 +50,5 @@ nextButtonAbout.addEventListener('click', () => {
 });
 
 
-getControlledSwiperByTab(aboutSection, swiperAbout);
+getControlledSwiperByTab(aboutSwiperBox, swiperAbout);
 
