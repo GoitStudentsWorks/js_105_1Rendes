@@ -16,9 +16,12 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.container.cover-container {
-  padding-left: 0;
-  padding-right: 0;
+.content {
+  position: relative;
+  box-sizing: border-box;
+  min-width: 320px;
+  height: 508px;
+  overflow: hidden;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -28,16 +31,9 @@
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-  .container.covers-container {
+  .content {
     background-image: url(../img/cover/fon-mob@2x.png);
   }
-}
-.content {
-  position: relative;
-  box-sizing: border-box;
-  min-width: 320px;
-  height: 508px;
-  overflow: hidden;
 }
 
 .covers-img img {
@@ -102,6 +98,7 @@
   .content {
     min-width: 768px;
     height: 960px;
+    background-image: url(../img/cover/fon-tab@1x.png);
   }
 
   .covers-img img {
@@ -116,14 +113,10 @@
   .section-cover .marquee-line {
     margin-right: 50px;
   }
-  .container.covers-container {
-    background-image: url(../img/cover/fon-tab@1x.png);
-  }
-
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .container.covers-container {
+    .content {
       background-image: url(../img/cover/fon-tab@2x.png);
     }
   }
@@ -131,16 +124,14 @@
 
 @media screen and (min-width: 1440px) {
   .content {
-    min-width: 1440px;
-  }
-  .container.covers-container {
+    max-width: 1440px;
+    margin: 0 auto;
     background-image: url(../img/cover/fon-desktop@1x.png);
   }
-
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .container.covers-container {
+    .content {
       background-image: url(../img/cover/fon-desktop@2x.png);
     }
   }

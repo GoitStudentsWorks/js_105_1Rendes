@@ -15,6 +15,19 @@ const errorCommMessage = document.querySelector('.error-comm-message');
 const footerModalCloseBtn = document.querySelector(
   '.footer-modal-close-btn-icon'
 );
+const formDataString = localStorage.getItem('feedback-form-data');
+const formData = formDataString
+  ? JSON.parse(formDataString)
+  : { email: '', message: '' };
+inputEmail.value = formData.email ? formData.email : '';
+inputComment.value = formData.message ? formData.comment : '';
+
+footerForm.addEventListener('input', () => {
+  formData.email = footerForm.elements.userEmail.value.trim();
+  formData.comment = footerForm.elements.userComment.value.trim();
+  const json = JSON.stringify(formData);
+  localStorage.setItem('feedback-form-data', json);
+});
 
 async function createPost(email, comment) {
   try {
@@ -68,7 +81,7 @@ footerForm.addEventListener(`submit`, async e => {
       inputEmail.classList.remove('correct-email');
       errorCommMessage.textContent = '';
       errorMessage.textContent = '';
-      
+
       showModal();
       hideModal();
     }
