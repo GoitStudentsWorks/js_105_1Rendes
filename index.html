@@ -1,0 +1,1794 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/js_105_1Rendes/assets/favicon-2b67835f.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    
+    <script type="module" crossorigin src="/js_105_1Rendes/commonHelpers.js"></script>
+    <link rel="modulepreload" crossorigin href="/js_105_1Rendes/assets/vendor-9bc83c7d.js">
+    <link rel="stylesheet" href="/js_105_1Rendes/assets/vendor-5b0b01af.css">
+    <link rel="stylesheet" href="/js_105_1Rendes/assets/index-c0c7f777.css">
+  </head>
+  <body>
+    <header class="header-div">
+  <div class="container header-container section">
+    <div class="logo-div">
+      <picture class="header-pic">
+        <source
+          srcset="data:image/webp;base64,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 1x, /js_105_1Rendes/assets/header-logo@2x-47e32322.webp 2x"
+        />
+        <img src="data:image/webp;base64,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" alt="logo-image" />
+      </picture>
+      <p class="logo-sign">jefferson*</p>
+    </div>
+    <button type="button" class="header-menubtn">Menu</button>
+    <div class="header-menu header-hidden">
+      <ul class="header-menu-list">
+        <li>
+          <a href="#about" class="header-menulist-item">About me</a>
+        </li>
+        <li>
+          <a href="#benefits" class="header-menulist-item">Benefits</a>
+        </li>
+        <li>
+          <a href="#projects" class="header-menulist-item">Projects</a>
+        </li>
+        <li>
+          <a href="#faq" class="header-menulist-item">FAQ</a>
+        </li>
+      </ul>
+    </div>
+    <div class="header-mob-menubtn">
+      <svg class="header-menu-icon" width="28" height="28">
+        <use href="/js_105_1Rendes/assets/icons-e18b18b5.svg#icon-menu"></use>
+      </svg>
+    </div>
+    <div class="header-mob-menu header-mob-hidden">
+      <svg class="header-close-icon" width="28" height="28">
+        <use href="/js_105_1Rendes/assets/icons-e18b18b5.svg#icon-close"></use>
+      </svg>
+      <ul class="header-mobmenu-list">
+        <li class="header-mobmenu-listitem">
+          <a href="#about">About me</a>
+        </li>
+        <li class="header-mobmenu-listitem">
+          <a href="#benefits">Benefits</a>
+        </li>
+        <li class="header-mobmenu-listitem">
+          <a href="#projects">Projects</a>
+        </li>
+        <li class="header-mobmenu-listitem">
+          <a href="#faq">FAQ</a>
+        </li>
+      </ul>
+      <a href="#work-together" class="header-mob-order-button"
+        >Order the project</a
+      >
+    </div>
+    <a href="#work-together" class="header-order-button">Order the project</a>
+  </div>
+</header>
+
+    <section class="section-own">
+  <div class="background-div">
+    <div class="hero-container container">
+      <h1 class="hero-title">
+        HELLO.<br />I'M FULLSTACK DEVELOPER<br />LLOYD JEFFERSON.
+      </h1>
+      <ul class="social-list">
+        <li>
+          <a
+            class="social-link-hero"
+            href="https://www.instagram.com/goitclub/"
+            target="blank"
+          >
+            IG
+          </a>
+        </li>
+        <li>
+          <a
+            class="social-link-hero"
+            href="https://www.youtube.com/c/GoIT"
+            target="blank"
+          >
+            YT
+          </a>
+        </li>
+        <li>
+          <a
+            class="social-link-hero"
+            href="https://www.facebook.com/goITclub/"
+            target="blank"
+          >
+            FB
+          </a>
+        </li>
+        <li>
+          <a
+            class="social-link-hero"
+            href="https://github.com/1Rendes/Project-SuperScript"
+            target="blank"
+          >
+            GH
+          </a>
+        </li>
+        <li>
+          <a
+            class="social-link-hero email"
+            href="mailto:lloydjefferson@gmail.com"
+          >
+            lloydjefferson@gmail.com
+          </a>
+        </li>
+      </ul>
+      <div class="navigation-colors social-list">
+        <div class="box-colors" data-color="red"></div>
+        <div class="box-colors" data-color="green"></div>
+        <div class="box-colors" data-color="blue"></div>
+        <div class="box-colors" data-color="coral"></div>
+        <div class="box-colors" data-color="slate"></div>
+        <div class="box-colors" data-color="orange"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="about-section section" id="about">
+  <div class="about-container container">
+    <h2 class="visually-hidden">About me</h2>
+    <div class="about-wrap">
+      <div class="about-us-text-box">
+        <p class="about-main-text">
+          I work with people all over the world to create impressive and
+          <span class="about-red-text-span">functional</span>
+          <span class="about-grey-text-span">websites</span> that reflect each
+          client's unique personality.
+        </p>
+      </div>
+
+      <picture class="about-img">
+        <source
+          srcset="/js_105_1Rendes/assets/about-photo-8e59f5e9.webp 1x, /js_105_1Rendes/assets/about-photo-2x-9ba26b71.webp 2x"
+          media="(min-width:1440px)"
+          type="image/webp"
+        />
+        <source
+          srcset="/js_105_1Rendes/assets/about-photo-tab-3b9184ef.webp 1x, /js_105_1Rendes/assets/about-photo-tab-2x-dabb63e0.webp 2x"
+          media="(min-width:768px)"
+          type="image/webp"
+        />
+        <source
+          srcset="/js_105_1Rendes/assets/about-photo-mob-9ddd0aff.webp 1x, /js_105_1Rendes/assets/about-photo-mob-2x-e1a49363.webp 2x"
+          media="(min-width:375px)"
+          type="image/webp"
+        />
+        <img src="/js_105_1Rendes/assets/about-photo-8e59f5e9.webp" alt="my-photo" />
+      </picture>
+    </div>
+
+    <ul class="container-second">
+      <li class="ac">
+        <h2 class="ac-header">
+          <button type="button" class="ac-trigger">
+            <span class="about-ac-header">About me</span>
+            <svg class="ac-icon" height="20" width="20">
+              <use href="/js_105_1Rendes/assets/icons-e18b18b5.svg#icon-accordion"></use>
+            </svg>
+          </button>
+        </h2>
+        <div class="ac-panel about-ac-panel">
+          <div class="about-ac-wrap">
+            <p class="ac-text about-ac-text">
+              I am Lloyd Jefferson, a talented programmer with extensive
+              expertise in software development. I have an understanding of
+              different programming languages and technologies, always ready to
+              improve my skills. I always follow the latest trends and look for
+              unconventional, creative solutions to problems. I have a high
+              level of analytical skills and am able to effectively solve even
+              the most difficult tasks encountered on the way.
+            </p>
+            <p class="ac-text about-ac-text">
+              Able to work both independently and in a team. I can effectively
+              cooperate with colleagues, exchanging ideas and finding optimal
+              solutions. Professional maturity allows you to calmly cope with
+              challenges and stressful situations, while maintaining a high
+              quality of work.I am always looking for opportunities for
+              self-improvement. I actively study new technologies and practices
+              to stay abreast of the latest innovations. I have a strong
+              understanding of various programming languages, frameworks and
+              architectural concepts that allow me to create efficient and
+              scalable software.
+            </p>
+          </div>
+        </div>
+      </li>
+      <li class="ac">
+        <h2 class="ac-header">
+          <button type="button" class="ac-trigger">
+            <span class="about-ac-header">Role</span>
+            <svg class="ac-icon" height="20" width="20">
+              <use href="/js_105_1Rendes/assets/icons-e18b18b5.svg#icon-accordion"></use>
+            </svg>
+          </button>
+        </h2>
+        <div class="ac-panel about-ac-panel">
+          <div class="about-ac-wrap">
+            <p class="ac-text about-ac-text">Frontend development</p>
+            <p class="ac-text about-ac-text">HeadlessCMS,Wordpress</p>
+            <p class="ac-text about-ac-text">Blender(enjoy)</p>
+          </div>
+        </div>
+      </li>
+      <li class="ac">
+        <h2 class="ac-header">
+          <button type="button" class="ac-trigger">
+            <span class="about-ac-header">Education</span>
+            <svg class="ac-icon" height="20" width="20">
+              <use href="/js_105_1Rendes/assets/icons-e18b18b5.svg#icon-accordion"></use>
+            </svg>
+          </button>
+        </h2>
+        <div class="ac-panel about-ac-panel">
+          <div class="about-ac-wrap">
+            <p class="ac-text about-ac-text">
+              2018 - 2019 / Frontend Development Diploma, GoIT IT School, New
+              York
+            </p>
+            <p class="ac-text about-ac-text">
+              2019 - 2020 / Advanced Web Development Certificate, GoIT IT
+              School, New York
+            </p>
+            <p class="ac-text about-ac-text">
+              2020 - 2022 / Advanced Blender Animation Techniques, Udemy
+            </p>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <div class="about-swiper-wrapper">
+      <div class="swiper swiper-about">
+        <ul class="about-skills-list swiper-wrapper">
+          <li class="swiper-slide">
+            <p class="about-skills-list-item">HTML/CSS</p>
+          </li>
+          <li class="swiper-slide">
+            <p class="about-skills-list-item">JavaScript</p>
+          </li>
+          <li class="swiper-slide">
+            <p class="about-skills-list-item">React</p>
+          </li>
+          <li class="swiper-slide">
+            <p class="about-skills-list-item">Node.js</p>
+          </li>
+          <li class="swiper-slide">
+            <p class="about-skills-list-item">React Native</p>
+          </li>
+          <li class="swiper-slide">
+            <p class="about-skills-list-item">Soft skills</p>
+          </li>
+          <li class="swiper-slide">
+            <p class="about-skills-list-item">HTML/CSS</p>
+          </li>
+          <li class="swiper-slide">
+            <p class="about-skills-list-item">JavaScript</p>
+          </li>
+          <li class="swiper-slide">
+            <p class="about-skills-list-item">React</p>
+          </li>
+          <li class="swiper-slide">
+            <p class="about-skills-list-item">Node.js</p>
+          </li>
+          <li class="swiper-slide">
+            <p class="about-skills-list-item">React Native</p>
+          </li>
+          <li class="swiper-slide">
+            <p class="about-skills-list-item">Soft skills</p>
+          </li>
+        </ul>
+      </div>
+
+      <button
+        class="swiper-next-btn-about"
+        type="button"
+        aria-label="Next Slide"
+      >
+        <svg class="swiper-next-arrow-about">
+          <use href="/js_105_1Rendes/assets/icons-e18b18b5.svg#arrow-right"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+    <section class="section" id="benefits">
+  <div class="container benefits-container">
+    <h2 class="title-benefits">Benefits of working with me</h2>
+    <div class="benefits-content">
+      <ul class="benefits-list">
+        <li class="benefits-items">
+          <div class="svg-div">
+            <svg class="benefits-icon" width="48" height="48">
+              <use href="/js_105_1Rendes/assets/icons-e18b18b5.svg#icon-user"></use>
+            </svg>
+          </div>
+          <div class="benefits-info">
+            <h3 class="benefits-subtitle">Expertise</h3>
+            <p class="benefits-text">
+              As a highly experienced developer, I have deep knowledge of
+              programming and website development.
+            </p>
+          </div>
+        </li>
+        <li class="benefits-items">
+          <div class="svg-div">
+            <svg class="benefits-icon" width="48" height="48">
+              <use href="/js_105_1Rendes/assets/icons-e18b18b5.svg#icon-message"></use>
+            </svg>
+          </div>
+          <div class="benefits-info">
+            <h3 class="benefits-subtitle">Communication</h3>
+            <p class="benefits-text">
+              Understanding your needs and wants is my priority and I am always
+              open to discussions and corrections.
+            </p>
+          </div>
+        </li>
+        <li class="benefits-items">
+          <div class="svg-div">
+            <svg class="benefits-icon" width="48" height="48">
+              <use href="/js_105_1Rendes/assets/icons-e18b18b5.svg#icon-brush"></use>
+            </svg>
+          </div>
+          <div class="benefits-info">
+            <h3 class="benefits-subtitle">Art</h3>
+            <p class="benefits-text">
+              Thanks to my creative nature, I am ready to accept challenges and
+              help you bring your ideas to life.
+            </p>
+          </div>
+        </li>
+        <li class="benefits-items">
+          <div class="svg-div">
+            <svg class="benefits-icon" width="48" height="48">
+              <use href="/js_105_1Rendes/assets/icons-e18b18b5.svg#icon-hourglass"></use>
+            </svg>
+          </div>
+          <div class="benefits-info">
+            <h3 class="benefits-subtitle">Urgent execution...</h3>
+            <p class="benefits-text">
+              I understand how important time is to you. Ready to work quickly
+              and efficiently, without reducing the quality of work.
+            </p>
+          </div>
+        </li>
+      </ul>
+      <a class="benefits-btn" href="#work-together">Order the project</a>
+    </div>
+  </div>
+</section>
+
+    <section class="section" id="projects">
+  <div class="container">
+    <h2 class="project-title">projects</h2>
+    <div class="swiper project-swiper">
+      <ul class="swiper-wrapper">
+        <li class="swiper-slide project-item">
+          <div class="project-text-box">
+            <ul class="project-hashtag-list">
+              <li class="project-hashtag">#react</li>
+              <li class="project-hashtag">#js</li>
+              <li class="project-hashtag">#node js</li>
+              <li class="project-hashtag">#git</li>
+            </ul>
+            <h3 class="project-subtitle">
+              Programming Across Borders: Ideas, Technologies, Innovations
+            </h3>
+            <a
+              class="project-link"
+              href="https://github.com/1Rendes/Project-SuperScript"
+              target="_blank"
+              >See project</a
+            >
+          </div>
+          <div class="project-image-box">
+            <picture
+              ><source
+                srcset="/js_105_1Rendes/assets/projects-readjourney-d-ccff816f.jpg 1x, /js_105_1Rendes/assets/projects-readjourney-d-2x-d4051974.jpg 2x"
+                media="(min-width: 1440px)" />
+              <source
+                srcset="/js_105_1Rendes/assets/projects-readjourney-d-ccff816f.jpg 1x, /js_105_1Rendes/assets/projects-readjourney-d-2x-d4051974.jpg 2x"
+                media="(min-width: 768px)" />
+              <source
+                srcset="/js_105_1Rendes/assets/projects-readjourney-m-a82ddb15.jpg 1x, /js_105_1Rendes/assets/projects-readjourney-m-2x-aff22585.jpg 2x"
+                media="(max-width: 767px)" />
+              <img
+                class="project-image"
+                src="/js_105_1Rendes/assets/projects-readjourney-m-a82ddb15.jpg"
+                alt="registration form and screenshot project readjourney"
+            /></picture>
+          </div>
+        </li>
+        <li class="swiper-slide project-item">
+          <div class="project-text-box">
+            <ul class="project-hashtag-list">
+              <li class="project-hashtag">#react</li>
+              <li class="project-hashtag">#js</li>
+              <li class="project-hashtag">#node js</li>
+              <li class="project-hashtag">#git</li>
+            </ul>
+            <h3 class="project-subtitle">
+              Programming Across Borders: Ideas, Technologies, Innovations
+            </h3>
+            <a
+              class="project-link"
+              href="https://github.com/1Rendes/Project-SuperScript"
+              target="_blank"
+              >See project</a
+            >
+          </div>
+          <div class="project-image-box">
+            <picture
+              ><source
+                srcset="/js_105_1Rendes/assets/projects-petlove-d-5749f611.webp 1x, /js_105_1Rendes/assets/projects-petlove-d-2x-9cc01c95.webp 2x"
+                media="(min-width: 1440px)" />
+              <source
+                srcset="/js_105_1Rendes/assets/projects-petlove-d-5749f611.webp 1x, /js_105_1Rendes/assets/projects-petlove-d-2x-9cc01c95.webp 2x"
+                media="(min-width: 768px)" />
+              <source
+                srcset="/js_105_1Rendes/assets/projects-petlove-m-0a43b060.webp 1x, /js_105_1Rendes/assets/projects-petlove-m-2x-9e2e14e3.webp 2x"
+                media="(max-width: 767px)" />
+              <img
+                class="project-image"
+                src="/js_105_1Rendes/assets/projects-petlove-m-0a43b060.webp"
+                alt="two people with a dog and logo petlove"
+            /></picture>
+          </div>
+        </li>
+        <li class="swiper-slide project-item">
+          <div class="project-text-box">
+            <ul class="project-hashtag-list">
+              <li class="project-hashtag">#react</li>
+              <li class="project-hashtag">#js</li>
+              <li class="project-hashtag">#node js</li>
+              <li class="project-hashtag">#git</li>
+            </ul>
+            <h3 class="project-subtitle">
+              Programming Across Borders: Ideas, Technologies, Innovations
+            </h3>
+            <a
+              class="project-link"
+              href="https://github.com/1Rendes/Project-SuperScript"
+              target="_blank"
+              >See project</a
+            >
+          </div>
+          <div class="project-image-box">
+            <picture
+              ><source
+                srcset="/js_105_1Rendes/assets/projects-vocabbuilder-d-c8ad68f0.webp 1x, /js_105_1Rendes/assets/projects-vocabbuilder-d-2x-c3de1398.webp 2x"
+                media="(min-width: 1440px)" />
+              <source
+                srcset="/js_105_1Rendes/assets/projects-vocabbuilder-d-c8ad68f0.webp 1x, /js_105_1Rendes/assets/projects-vocabbuilder-d-2x-c3de1398.webp 2x"
+                media="(min-width: 768px)" />
+              <source
+                srcset="data:image/webp;base64,UklGRhQMAABXRUJQVlA4IAgMAAAwRACdASo3AcMAPpFGnUslo6MipDaZ2LASCWdu4W6vOrNZJ5Q1v74IemFdtyfMr5r3nVb8ZvSeRLefP6X25f5vw18uvvGVScZ1C97/xJU2+bVAv1s7+vVBlHsm3yn2AP0z/0vVvz4Khvlc+xj93Aq/NpakAMWjzMGqbA7BGsDoqsw34zMzMzMzMzL7ul67aFeFKUlyjuZmZmZhLFyVeFDDOnY/f4aroGxgn2IC7bu7u7zLx2fIYwZ9vdikv28JS1laH42ACDDKbfeMXmeUvHd07VVh7KBgT0KvGf75zk6qQUenmtgpXCEZ79VHjL94fzXclh6Jdowz3OZgmHLeeuhssCNl1ka/bq9+kO/IFa97HebAnCFp413f//KQ471w7ePNf3C/aAoDnKDT2m42EpsX0uKdArF4jI1nXjXdbWubEwe21X8eWq26RdCe4epXv+SHdEK5dSuAPP1SuzW3FyuEniiGHrdXKqwSZaYxcOAMfNwA9PzoHHTHYWNMScQ4PP1o8b8KlSWxPsZgCBBhP9IKNHAeSqI3AR+CcUfr7qTUF05ivvN5DoxtWzfosIZAG9h06MRGlUh697Egs7Zz6x/56h04+/+jK3DBK37vaVqbYhsSStJ7va6j7SI7raAylDcDhAlO97QlLWViyK80dP3IIUXq6K5C2BbVySBSfo8jJukhaBi0KJ1/L2lsZmZnxrZNOtLZ+yXabuRERGA8685VVVVVVVVWDbWugAD+20UC+DVis/axRhPoBWqWAgFvTaKAWkWNQaCzXmFFzcVvJuwHaDwOA//NbZa1j7vvqIaFH0Gr7UEnKwmtC4SRtWtTm7k4zaQg9aIdFQKKxpUA8TwPSvjppiySBN2rXHSMBVnIWOEIz3VZY7nQpPSM4mAl91F0u/fCjmN9GWs6+dJ5Jy2QlE6TEIgrVTHVVJHZy3CKPJ68e1HtHsGsBs61B5CmrPmUygsy29VZ/i3+N59cUSPq0QLAOj1aV/0cXhBDdiNgAHuXFqNEro8SUGvmEeLC4L8W3rglum125ztXFhb5V5a9q82ZUDYc5H9aPRbomBxGE1UBhTPMfpOCU5fF/zn07vHSX1Uq9jp6K8HRLzq1vGnFYyGm7hdUs39SJNstVumcJMuQysZUxjMNjHf/Px1DiEekwbFvMZNPvn35c3oNuUT86vyXtCBahdjvLMxWqv/waL1J1EBzs++ug0hARw4qsVtnipmJS+yPUg0h488M70PdeRsVEq0myzZJIrHJzpK8sP9jFdjb9egIqy4IjoEgIsDvp8uvF/OZ/J03lm1M08oKHFkRC/tRjqacTAasPZJW+TQ/rvfJS/qiGTJb5y+PiBCzL7fuzuWQn6R9brJ6qbYRV3flt+uunsJblBDAy1kWgGtC7QU04YSdlA46CeNcL7ioCsgKUlZiLAkTwyeci909USzFSWP6rJTsKXJL9A36dpZ+DqGfVUV1Th5uC3I5vbA5nm5XmUmAEVzIVWhyE70d8E2VGeF1G2e7hTEi6XLRdhgqJOSAVoepobyDfHwNStkTco1EDgl265Qwu1hb2BW5INt1W5DP46SWWwxfwr54u5OYgl20NJUtOkn/TmIJafitOlIje/DQ8q8JvYcJ3incrEBDY74C5JPF7tY64nOZ31L+DTd2Rry2nZNnoL0scbFMvA94GMjx08acybtJpPkYa0DiVNV02BjV9rEpwhkvm3VmHH5dAz7v2ROXPn6oboemQyPoV8DL/W+X+Jap6pV1zyCocTFzbYXc/sl4GzDkC5d8RKEEJV0zU50GYnd9uS771CtMO15rvIZLiMSDJmO4XmHvc7unddAvTuLCB+0wG3u8/VRi4arcClTLqGRhc3LlgXmF/OgU81rOv0ichhMsf5m9reK1soZc0Ek5Oo1ugrTZLxf24v7jYLvP1UK+8Uz3NyFohQHKGWGQGwYUma2eqBcP3RqoJ9F1KlLMqlviNAvjbbJD/b/Ca/3wwuBD+PsLMvCQxFJTinVBxUkr9Vp4gRzXssRFuLCzsQlMhw4TlWjrPebNY8nn7DGJZI7+DzPOiAqYDT8b9O9K/3als99RJ+oB3w2R8cgEX/RkkntsT246vAjbho2r2Z5yukRf5OXODfG3GsRRCugCneVESPO4cgb/dY3fSwGQKKYWEhhXfsJK6OSayaUr/U/vvRUIxtn5t3eEGSTFXU9fJOQwqZOmBPFLwVlwMh8+TLvu010GQ/3eqgGz35n/9icsNXK9+PQJh81LcIAZa1vzeh5q/qOgpcG3yRqm2UtBOKvwYf5oh6Tu2kxAhiawsonX+0qWTME/s2OydvDp+TeqqYp7r1swxO76TDQ0o1odRf79yTOrM4mrSHKp/ZbI7GZaT+aIgwYYSwlyyXZrmNu3Ik0DOYauOGsblsZffTYra10xTPgoCJlm/vLkmaW8swCRuS1hIM8bjMM6fS2E+n7ehSYuGf9tjl04Ga+uen3BGtmYWH2H+GPnpBOvc146E+4m0q7oEp/m6bnyYhtJgLKgf/s1KThDFDZs/jQCQp+2uWmvfxS1k+62OluPF1a8IuG+YoFZAffBiztBl96bNL/DHFAfkYVYxEDa1t9bN/AKl0SvlelpONVIK5YB51FKkEZB/HKLionY8GKLOL2Y16alR8XyOuzZY3NCnaFnzJGa0pckwjEX8DaduJnr2HZRSrdqtobWv44STbit3Zk6IZwt6fDb8rcc5k4vh2tIBxsjcM5hxT/SxxiNn65xaTh054c1ABGCYqXrvcLu/e1Soi4DvNo03Cv7u77o2f5oaY/lESuI9vGpJIHPyXoMmQD37rwDHF7dtaW3VRaPTPixw3/55jw3BFlGqhSTUGUMeyPPbCplUOqRbOmvaftpbu/csPq8JbqkWtLXR85FQlVoD50ydVSXHRxjcnwjLkuhDBRN3L2N4T756lxO7MVXHq928/d3/XmkMy2ZbPqJYX8yvq437RDvRRwYY3g6vaTmgDDGpuOlnNTSvkSHMH1r6IVKBh87/hK+ux51DDsaurobm5gM0OmzBP6vkvG83yKAfZamKdY4SZyTxCkf+jeKKNDk53dtVKOqmslqB7anajr6vKz4rxNbINWa1KIOmamIz4Sc1mJQKrn6KaAz+7XSjOV434Ox4wqDBOr2p8kxXDwZ0WScYKulPeor99hcf4nxPG/+Y5VaSjtt8WPi2zzlNxKNyFtfBUIwzZ9e5NB4yXoxG2nbeL0Isrb71SoxLWPB5no4zuZ8ubAGGdJf4wjRndExty6X+D3zXum8pdMn+5pjs4ZblNN2cZw5FBTKv59ff/ZNz4e6Ldzc+/WRDJPxdh4A8JJrnBVc2Pnn3KWOug28TT4OadpBiWK3c2vCVP++XEK8pzP5qzbO42HkP98YCbo+yRwq336LI2KGC4I5M1fxHm6a1GxB6FyNf0BEGHm2UB5kWhN0Ms1XbFqi1Gtcdz8CAoCWlY2hq/r63KLaz4b/FUEbHc2f+Pe2DXMB18zDJQQSRGpsno2BgceLPHQRe0Xi+yuEUAH7S5kXdg/7ra/hoKj+9CQXdw5zsV3YSFnqd11bcBRCKUyuasMBhy3GHNeMBDw6Dc2L0acZQg9IlwlhLfxIvDRX7r3/qEoMaKRTRE/o3B2oxp9M8R0az7fSN+rxC8ZPKaHjLCq1A2MDbzZzQ10eFAiL3GUeBL3/QMbMVxUfhqToalMft4w1g2RAZJ8aucTZmlTBclltYwZdVx9lD0N9Jzsg/YnhkARvv8EmcZve2IYBz8UxFG4q/mDPjubUt4yVfjPwyj49v6NObQotXLKUa9DhFNFwfaghKaxhuyYc3/36NnnZgvP3Tm/7ZjoNwDYo1MfShjIsdIxxQIBdgQ/PlCnmdQdlP783hy5wDME50AAKWLOYBqq5z77s0AQDERGkN8F2uBDh3HD5Zx+NpJRimBTKDraCES0Hc0sBjzfhZPcZ5djOy5h9/lkzmPOSR26o/IxEkKxwAkcMUIClDKC/MeE1Ol2zxDQjPni8N+zmjmnZkrFSAHb6r2v/fSp52zjDXWgIz/kXC59y3tcsSk/mtS0fgwDw1EfVjYALK+TM3hoIfGAGnxVWnpHVqzSAUDty7R0DbtZCdYil+CAAAA== 1x, /js_105_1Rendes/assets/projects-vocabbuilder-m-2x-7e227381.webp 2x"
+                media="(max-width: 767px)" />
+              <img
+                class="project-image"
+                src="data:image/webp;base64,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"
+                alt="two people with a dog and logo petlove"
+            /></picture>
+          </div>
+        </li>
+      </ul>
+      <div class="swiper-box-arrows">
+        <button class="swiper-prev-btn">
+          <svg class="swiper-prev-arrow">
+            <use href="/js_105_1Rendes/assets/icons-e18b18b5.svg#arrow-left"></use>
+          </svg>
+        </button>
+        <button class="swiper-next-btn">
+          <svg class="swiper-next-arrow">
+            <use href="/js_105_1Rendes/assets/icons-e18b18b5.svg#arrow-right"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- faq section -->
+<section class="section" id="faq">
+  <div class="container">
+    <h2 class="section-title">FAQ</h2>
+
+    <div class="container-first">
+      <div class="ac ac-first column">
+        <h2 class="ac-header">
+          <button type="button" class="ac-trigger">
+            What programming languages ​​are most often used in your project?
+            <svg class="ac-icon" height="20" width="20">
+              <use href="/js_105_1Rendes/assets/icons-e18b18b5.svg#icon-accordion"></use>
+            </svg>
+          </button>
+        </h2>
+        <div class="ac-panel">
+          <p class="ac-text">
+            In the field of web development, there are various technologies and
+            programming languages. Typically, this includes a combination of
+            frontend (client side) and backend (server side) languages.
+          </p>
+        </div>
+      </div>
+
+      <div class="ac ac-first column2">
+        <h2 class="ac-header">
+          <button type="button" class="ac-trigger">
+            How can I contact you?
+            <svg class="ac-icon" height="20" width="20">
+              <use href="/js_105_1Rendes/assets/icons-e18b18b5.svg#icon-accordion"></use>
+            </svg>
+          </button>
+        </h2>
+        <div class="ac-panel">
+          <p class="ac-text">
+            In the field of web development, there are various technologies and
+            programming languages. Typically, this includes a combination of
+            frontend (client side) and backend (server side) languages.
+          </p>
+        </div>
+      </div>
+
+      <div class="ac ac-first column">
+        <h2 class="ac-header">
+          <button type="button" class="ac-trigger">
+            What are the deadlines for the project?
+            <svg class="ac-icon" height="20" width="20">
+              <use href="/js_105_1Rendes/assets/icons-e18b18b5.svg#icon-accordion"></use>
+            </svg>
+          </button>
+        </h2>
+        <div class="ac-panel">
+          <p class="ac-text">
+            The terms of project implementation depend to a large extent on a
+            number of factors, such as the scope of the project, its complexity,
+            and the availability of resources. Determining exact deadlines is a
+            difficult task, and it usually occurs during the planning phase of
+            the project.
+          </p>
+        </div>
+      </div>
+
+      <div class="ac ac-first column2">
+        <h2 class="ac-header">
+          <button type="button" class="ac-trigger">
+            Do you provide advice or support?
+            <svg class="ac-icon" height="20" width="20">
+              <use href="/js_105_1Rendes/assets/icons-e18b18b5.svg#icon-accordion"></use>
+            </svg>
+          </button>
+        </h2>
+        <div class="ac-panel">
+          <p class="ac-text">
+            The terms of project implementation depend to a large extent on a
+            number of factors, such as the scope of the project, its complexity,
+            and the availability of resources. Determining exact deadlines is a
+            difficult task, and it usually occurs during the planning phase of
+            the project.
+          </p>
+        </div>
+      </div>
+
+      <div class="ac ac-first column">
+        <h2 class="ac-header">
+          <button type="button" class="ac-trigger">
+            What payment methods do you accept?
+            <svg class="ac-icon" height="20" width="20">
+              <use href="/js_105_1Rendes/assets/icons-e18b18b5.svg#icon-accordion"></use>
+            </svg>
+          </button>
+        </h2>
+        <div class="ac-panel">
+          <p class="ac-text">
+            Payment through credit and debit cards such as Visa, MasterCard,
+            specialized electronic payment systems such as PayPal, as well as
+            payments in cryptocurrencies such as Bitcoin, Ethereum and others.
+          </p>
+        </div>
+      </div>
+
+      <div class="ac ac-first column2">
+        <h2 class="ac-header">
+          <button type="button" class="ac-trigger">
+            What does the process of developing a software product look like
+            from idea to implementation?
+            <svg class="ac-icon" height="20" width="20">
+              <use href="/js_105_1Rendes/assets/icons-e18b18b5.svg#icon-accordion"></use>
+            </svg>
+          </button>
+        </h2>
+        <div class="ac-panel">
+          <p class="ac-text">
+            Payment through credit and debit cards such as Visa, MasterCard,
+            specialized electronic payment systems such as PayPal, as well as
+            payments in cryptocurrencies such as Bitcoin, Ethereum and others.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="section-cover section">
+  <h2 class="visually-hidden">Covers</h2>
+  <div class="content">
+    <div class="marquee">
+      <ul class="marquee-inner">
+        <li class="marquee-line">
+          <picture class="covers-img">
+            <source
+              srcset="/js_105_1Rendes/assets/card-1@1x-c8388d65.webp 1x, /js_105_1Rendes/assets/card-1@2x-d5b55830.webp 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/js_105_1Rendes/assets/card-1@1x-c8388d65.webp 1x, /js_105_1Rendes/assets/card-1@2x-d5b55830.webp 2x"
+              media="(max-width: 767px)"
+            />
+            <img
+              class="basic-img"
+              data-srcset="./img/cover/card-1@1x.webp 1x, ./img/cover/card-1@2x.webp 2x"
+              src="/js_105_1Rendes/assets/card-1@1x-c8388d65.webp"
+              alt="Card-1"
+              width="282"
+              height="162"
+              loading="lazy"
+            />
+          </picture>
+        </li>
+        <li class="marquee-line">
+          <picture class="covers-img">
+            <source
+              srcset="/js_105_1Rendes/assets/card-2@1x-00d6caf4.webp 1x, /js_105_1Rendes/assets/card-2@2x-1a9bbd8e.webp 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/js_105_1Rendes/assets/card-2@1x-00d6caf4.webp 1x, /js_105_1Rendes/assets/card-2@2x-1a9bbd8e.webp 2x"
+              media="(max-width: 767px)"
+            />
+            <img
+              class="basic-img"
+              data-srcset="./img/cover/card-2@1x.webp 1x, ./img/cover/card-2@2x.webp 2x"
+              src="/js_105_1Rendes/assets/card-2@1x-00d6caf4.webp"
+              alt="Card-2"
+              width="282"
+              height="162"
+              loading="lazy"
+            />
+          </picture>
+        </li>
+        <li class="marquee-line">
+          <picture class="covers-img">
+            <source
+              srcset="/js_105_1Rendes/assets/card-3@1x-2b0891ce.webp 1x, /js_105_1Rendes/assets/card-3@2x-69df88f3.webp 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/js_105_1Rendes/assets/card-3@1x-2b0891ce.webp 1x, /js_105_1Rendes/assets/card-3@2x-69df88f3.webp 2x"
+              media="(max-width: 767px)"
+            />
+            <img
+              class="basic-img"
+              data-srcset="./img/cover/card-3@1x.webp 1x, ./img/cover/card-3@2x.webp 2x"
+              src="/js_105_1Rendes/assets/card-3@1x-2b0891ce.webp"
+              alt="Card-3"
+              width="282"
+              height="162"
+              loading="lazy"
+            />
+          </picture>
+        </li>
+        <li class="marquee-line">
+          <picture class="covers-img">
+            <source
+              srcset="/js_105_1Rendes/assets/card-4@1x-46074400.webp 1x, /js_105_1Rendes/assets/card-4@2x-12c11535.webp 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/js_105_1Rendes/assets/card-4@1x-46074400.webp 1x, /js_105_1Rendes/assets/card-4@2x-12c11535.webp 2x"
+              media="(max-width: 767px)"
+            />
+            <img
+              class="basic-img"
+              data-srcset="./img/cover/card-4@1x.webp 1x, ./img/cover/card-4@2x.webp 2x"
+              src="/js_105_1Rendes/assets/card-4@1x-46074400.webp"
+              alt="Card-4"
+              width="282"
+              height="162"
+              loading="lazy"
+            />
+          </picture>
+        </li>
+        <li class="marquee-line">
+          <picture class="covers-img">
+            <source
+              srcset="/js_105_1Rendes/assets/cover-card-5@1x-de950cfc.webp 1x, /js_105_1Rendes/assets/cover-card-5@2x-c7deefb5.webp 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/js_105_1Rendes/assets/cover-card-5@1x-de950cfc.webp 1x, /js_105_1Rendes/assets/cover-card-5@2x-c7deefb5.webp 2x"
+              media="(max-width: 767px)"
+            />
+            <img
+              class="basic-img"
+              data-srcset="./img/cover/cover-card-5@1x.webp 1x, ./img/cover/cover-card-5@2x.webp 2x"
+              src="/js_105_1Rendes/assets/cover-card-5@1x-de950cfc.webp"
+              alt="Card-5"
+              width="282"
+              height="162"
+              loading="lazy"
+            />
+          </picture>
+        </li>
+        <li class="marquee-line">
+          <picture class="covers-img">
+            <source
+              srcset="/js_105_1Rendes/assets/cover-card-6@1x-25c01fbc.webp 1x, /js_105_1Rendes/assets/cover-card-6@2x-1d19399d.webp 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/js_105_1Rendes/assets/cover-card-6@1x-25c01fbc.webp 1x, /js_105_1Rendes/assets/cover-card-6@2x-1d19399d.webp 2x"
+              media="(max-width: 767px)"
+            />
+            <img
+              class="basic-img"
+              data-srcset="./img/cover/cover-card-6@1x.webp 1x, ./img/cover/cover-card-6@2x.webp 2x"
+              src="/js_105_1Rendes/assets/cover-card-6@1x-25c01fbc.webp"
+              alt="Card-6"
+              width="282"
+              height="162"
+              loading="lazy"
+            />
+          </picture>
+        </li>
+        <li class="marquee-line">
+          <picture class="covers-img">
+            <source
+              srcset="/js_105_1Rendes/assets/card-7@1x-de7076d0.webp 1x, /js_105_1Rendes/assets/card-7@2x-6eea22f4.webp 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/js_105_1Rendes/assets/card-7@1x-de7076d0.webp 1x, /js_105_1Rendes/assets/card-7@2x-6eea22f4.webp 2x"
+              media="(max-width: 767px)"
+            />
+            <img
+              class="basic-img"
+              data-srcset="./img/cover/card-7@1x.webp 1x, ./img/cover/card-7@2x.webp 2x"
+              src="/js_105_1Rendes/assets/card-7@1x-de7076d0.webp"
+              alt="Card-7"
+              width="282"
+              height="162"
+              loading="lazy"
+            />
+          </picture>
+        </li>
+        <li class="marquee-line">
+          <picture class="covers-img">
+            <source
+              srcset="/js_105_1Rendes/assets/cover-card-8@1x-c86ac0d8.webp 1x, /js_105_1Rendes/assets/cover-card-8@2x-4d531f2c.webp 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/js_105_1Rendes/assets/cover-card-8@1x-c86ac0d8.webp 1x, /js_105_1Rendes/assets/cover-card-8@2x-4d531f2c.webp 2x"
+              media="(max-width: 767px)"
+            />
+            <img
+              class="basic-img"
+              data-srcset="./img/cover/cover-card-8@1x.webp 1x, ./img/cover/cover-card-8@2x.webp 2x"
+              src="/js_105_1Rendes/assets/cover-card-8@1x-c86ac0d8.webp"
+              alt="Card-8"
+              width="282"
+              height="162"
+              loading="lazy"
+            />
+          </picture>
+        </li>
+        <li class="marquee-line">
+          <picture class="covers-img">
+            <source
+              srcset="/js_105_1Rendes/assets/card-9@1x-2a4c46bb.webp 1x, /js_105_1Rendes/assets/card-9@2x-bb4e22cb.webp 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/js_105_1Rendes/assets/card-9@1x-2a4c46bb.webp 1x, /js_105_1Rendes/assets/card-9@2x-bb4e22cb.webp 2x"
+              media="(max-width: 767px)"
+            />
+            <img
+              class="basic-img"
+              data-srcset="./img/cover/card-9@1x.webp 1x, ./img/cover/card-9@2x.webp 2x"
+              src="/js_105_1Rendes/assets/card-9@1x-2a4c46bb.webp"
+              alt="Card-9"
+              width="282"
+              height="162"
+              loading="lazy"
+            />
+          </picture>
+        </li>
+        <li class="marquee-line">
+          <picture class="covers-img">
+            <source
+              srcset="/js_105_1Rendes/assets/card-10@1x-ab52313f.webp 1x, /js_105_1Rendes/assets/card-10@2x-35f3dcb3.webp 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/js_105_1Rendes/assets/card-10@1x-ab52313f.webp 1x, /js_105_1Rendes/assets/card-10@2x-35f3dcb3.webp 2x"
+              media="(max-width: 767px)"
+            />
+            <img
+              class="basic-img"
+              data-srcset="./img/cover/card-10@1x.webp 1x, ./img/cover/card-10@2x.webp 2x"
+              src="/js_105_1Rendes/assets/card-10@1x-ab52313f.webp"
+              alt="Card-10"
+              width="282"
+              height="162"
+              loading="lazy"
+            />
+          </picture>
+        </li>
+      </ul>
+      <ul class="marquee-inner">
+        <li class="marquee-line">
+          <picture class="covers-img">
+            <source
+              srcset="/js_105_1Rendes/assets/card-10@1x-ab52313f.webp 1x, /js_105_1Rendes/assets/card-10@2x-35f3dcb3.webp 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/js_105_1Rendes/assets/card-10@1x-ab52313f.webp 1x, /js_105_1Rendes/assets/card-10@2x-35f3dcb3.webp 2x"
+              media="(max-width: 767px)"
+            />
+            <img
+              class="basic-img"
+              data-srcset="./img/cover/card-10@1x.webp 1x, ./img/cover/card-10@2x.webp 2x"
+              src="/js_105_1Rendes/assets/card-10@1x-ab52313f.webp"
+              alt="Card-10"
+              width="282"
+              height="162"
+              loading="lazy"
+            />
+          </picture>
+        </li>
+        <li class="marquee-line">
+          <picture class="covers-img">
+            <source
+              srcset="/js_105_1Rendes/assets/card-9@1x-2a4c46bb.webp 1x, /js_105_1Rendes/assets/card-9@2x-bb4e22cb.webp 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/js_105_1Rendes/assets/card-9@1x-2a4c46bb.webp 1x, /js_105_1Rendes/assets/card-9@2x-bb4e22cb.webp 2x"
+              media="(max-width: 767px)"
+            />
+            <img
+              class="basic-img"
+              data-srcset="./img/cover/card-9@1x.webp 1x, ./img/cover/card-9@2x.webp 2x"
+              src="/js_105_1Rendes/assets/card-9@1x-2a4c46bb.webp"
+              alt="Card-9"
+              width="282"
+              height="162"
+              loading="lazy"
+            />
+          </picture>
+        </li>
+        <li class="marquee-line">
+          <picture class="covers-img">
+            <source
+              srcset="/js_105_1Rendes/assets/cover-card-8@1x-c86ac0d8.webp 1x, /js_105_1Rendes/assets/cover-card-8@2x-4d531f2c.webp 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/js_105_1Rendes/assets/cover-card-8@1x-c86ac0d8.webp 1x, /js_105_1Rendes/assets/cover-card-8@2x-4d531f2c.webp 2x"
+              media="(max-width: 767px)"
+            />
+            <img
+              class="basic-img"
+              data-srcset="./img/cover/cover-card-8@1x.webp 1x, ./img/cover/cover-card-8@2x.webp 2x"
+              src="/js_105_1Rendes/assets/cover-card-8@1x-c86ac0d8.webp"
+              alt="Card-8"
+              width="282"
+              height="162"
+              loading="lazy"
+            />
+          </picture>
+        </li>
+        <li class="marquee-line">
+          <picture class="covers-img">
+            <source
+              srcset="/js_105_1Rendes/assets/card-7@1x-de7076d0.webp 1x, /js_105_1Rendes/assets/card-7@2x-6eea22f4.webp 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/js_105_1Rendes/assets/card-7@1x-de7076d0.webp 1x, /js_105_1Rendes/assets/card-7@2x-6eea22f4.webp 2x"
+              media="(max-width: 767px)"
+            />
+            <img
+              class="basic-img"
+              data-srcset="./img/cover/card-7@1x.webp 1x, ./img/cover/card-7@2x.webp 2x"
+              src="/js_105_1Rendes/assets/card-7@1x-de7076d0.webp"
+              alt="Card-7"
+              width="282"
+              height="162"
+              loading="lazy"
+            />
+          </picture>
+        </li>
+        <li class="marquee-line">
+          <picture class="covers-img">
+            <source
+              srcset="/js_105_1Rendes/assets/cover-card-6@1x-25c01fbc.webp 1x, /js_105_1Rendes/assets/cover-card-6@2x-1d19399d.webp 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/js_105_1Rendes/assets/cover-card-6@1x-25c01fbc.webp 1x, /js_105_1Rendes/assets/cover-card-6@2x-1d19399d.webp 2x"
+              media="(max-width: 767px)"
+            />
+            <img
+              class="basic-img"
+              data-srcset="./img/cover/cover-card-6@1x.webp 1x, ./img/cover/cover-card-6@2x.webp 2x"
+              src="/js_105_1Rendes/assets/cover-card-6@1x-25c01fbc.webp"
+              alt="Card-6"
+              width="282"
+              height="162"
+              loading="lazy"
+            />
+          </picture>
+        </li>
+        <li class="marquee-line">
+          <picture class="covers-img">
+            <source
+              srcset="/js_105_1Rendes/assets/cover-card-5@1x-de950cfc.webp 1x, /js_105_1Rendes/assets/cover-card-5@2x-c7deefb5.webp 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/js_105_1Rendes/assets/cover-card-5@1x-de950cfc.webp 1x, /js_105_1Rendes/assets/cover-card-5@2x-c7deefb5.webp 2x"
+              media="(max-width: 767px)"
+            />
+            <img
+              class="basic-img"
+              data-srcset="./img/cover/cover-card-5@1x.webp 1x, ./img/cover/cover-card-5@2x.webp 2x"
+              src="/js_105_1Rendes/assets/cover-card-5@1x-de950cfc.webp"
+              alt="Card-5"
+              width="282"
+              height="162"
+              loading="lazy"
+            />
+          </picture>
+        </li>
+        <li class="marquee-line">
+          <picture class="covers-img">
+            <source
+              srcset="/js_105_1Rendes/assets/card-4@1x-46074400.webp 1x, /js_105_1Rendes/assets/card-4@2x-12c11535.webp 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/js_105_1Rendes/assets/card-4@1x-46074400.webp 1x, /js_105_1Rendes/assets/card-4@2x-12c11535.webp 2x"
+              media="(max-width: 767px)"
+            />
+            <img
+              class="basic-img"
+              data-srcset="./img/cover/card-4@1x.webp 1x, ./img/cover/card-4@2x.webp 2x"
+              src="/js_105_1Rendes/assets/card-4@1x-46074400.webp"
+              alt="Card-4"
+              width="282"
+              height="162"
+              loading="lazy"
+            />
+          </picture>
+        </li>
+        <li class="marquee-line">
+          <picture class="covers-img">
+            <source
+              srcset="/js_105_1Rendes/assets/card-3@1x-2b0891ce.webp 1x, /js_105_1Rendes/assets/card-3@2x-69df88f3.webp 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/js_105_1Rendes/assets/card-3@1x-2b0891ce.webp 1x, /js_105_1Rendes/assets/card-3@2x-69df88f3.webp 2x"
+              media="(max-width: 767px)"
+            />
+            <img
+              class="basic-img"
+              data-srcset="./img/cover/card-3@1x.webp 1x, ./img/cover/card-3@2x.webp 2x"
+              src="/js_105_1Rendes/assets/card-3@1x-2b0891ce.webp"
+              alt="Card-3"
+              width="282"
+              height="162"
+              loading="lazy"
+            />
+          </picture>
+        </li>
+        <li class="marquee-line">
+          <picture class="covers-img">
+            <source
+              srcset="/js_105_1Rendes/assets/card-2@1x-00d6caf4.webp 1x, /js_105_1Rendes/assets/card-2@2x-1a9bbd8e.webp 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/js_105_1Rendes/assets/card-2@1x-00d6caf4.webp 1x, /js_105_1Rendes/assets/card-2@2x-1a9bbd8e.webp 2x"
+              media="(max-width: 767px)"
+            />
+            <img
+              class="basic-img"
+              data-srcset="./img/cover/card-2@1x.webp 1x, ./img/cover/card-2@2x.webp 2x"
+              src="/js_105_1Rendes/assets/card-2@1x-00d6caf4.webp"
+              alt="Card-2"
+              width="282"
+              height="162"
+              loading="lazy"
+            />
+          </picture>
+        </li>
+        <li class="marquee-line">
+          <picture class="covers-img">
+            <source
+              srcset="/js_105_1Rendes/assets/card-1@1x-c8388d65.webp 1x, /js_105_1Rendes/assets/card-1@2x-d5b55830.webp 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/js_105_1Rendes/assets/card-1@1x-c8388d65.webp 1x, /js_105_1Rendes/assets/card-1@2x-d5b55830.webp 2x"
+              media="(max-width: 767px)"
+            />
+            <img
+              class="basic-img"
+              data-srcset="./img/cover/card-1@1x.webp 1x, ./img/cover/card-1@2x.webp 2x"
+              src="/js_105_1Rendes/assets/card-1@1x-c8388d65.webp"
+              alt="Card-1"
+              width="282"
+              height="162"
+              loading="lazy"
+            />
+          </picture>
+        </li>
+      </ul>
+      <ul class="marquee-inner">
+        <li class="marquee-line">
+          <picture class="covers-img">
+            <source
+              srcset="/js_105_1Rendes/assets/card-1@1x-c8388d65.webp 1x, /js_105_1Rendes/assets/card-1@2x-d5b55830.webp 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/js_105_1Rendes/assets/card-1@1x-c8388d65.webp 1x, /js_105_1Rendes/assets/card-1@2x-d5b55830.webp 2x"
+              media="(max-width: 767px)"
+            />
+            <img
+              class="basic-img"
+              data-srcset="./img/cover/card-1@1x.webp 1x, ./img/cover/card-1@2x.webp 2x"
+              src="/js_105_1Rendes/assets/card-1@1x-c8388d65.webp"
+              alt="Card-1"
+              width="282"
+              height="162"
+              loading="lazy"
+            />
+          </picture>
+        </li>
+        <li class="marquee-line">
+          <picture class="covers-img">
+            <source
+              srcset="/js_105_1Rendes/assets/card-2@1x-00d6caf4.webp 1x, /js_105_1Rendes/assets/card-2@2x-1a9bbd8e.webp 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/js_105_1Rendes/assets/card-2@1x-00d6caf4.webp 1x, /js_105_1Rendes/assets/card-2@2x-1a9bbd8e.webp 2x"
+              media="(max-width: 767px)"
+            />
+            <img
+              class="basic-img"
+              data-srcset="./img/cover/card-2@1x.webp 1x, ./img/cover/card-2@2x.webp 2x"
+              src="/js_105_1Rendes/assets/card-2@1x-00d6caf4.webp"
+              alt="Card-2"
+              width="282"
+              height="162"
+              loading="lazy"
+            />
+          </picture>
+        </li>
+        <li class="marquee-line">
+          <picture class="covers-img">
+            <source
+              srcset="/js_105_1Rendes/assets/card-3@1x-2b0891ce.webp 1x, /js_105_1Rendes/assets/card-3@2x-69df88f3.webp 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/js_105_1Rendes/assets/card-3@1x-2b0891ce.webp 1x, /js_105_1Rendes/assets/card-3@2x-69df88f3.webp 2x"
+              media="(max-width: 767px)"
+            />
+            <img
+              class="basic-img"
+              data-srcset="./img/cover/card-3@1x.webp 1x, ./img/cover/card-3@2x.webp 2x"
+              src="/js_105_1Rendes/assets/card-3@1x-2b0891ce.webp"
+              alt="Card-3"
+              width="282"
+              height="162"
+              loading="lazy"
+            />
+          </picture>
+        </li>
+        <li class="marquee-line">
+          <picture class="covers-img">
+            <source
+              srcset="/js_105_1Rendes/assets/card-4@1x-46074400.webp 1x, /js_105_1Rendes/assets/card-4@2x-12c11535.webp 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/js_105_1Rendes/assets/card-4@1x-46074400.webp 1x, /js_105_1Rendes/assets/card-4@2x-12c11535.webp 2x"
+              media="(max-width: 767px)"
+            />
+            <img
+              class="basic-img"
+              data-srcset="./img/cover/card-4@1x.webp 1x, ./img/cover/card-4@2x.webp 2x"
+              src="/js_105_1Rendes/assets/card-4@1x-46074400.webp"
+              alt="Card-4"
+              width="282"
+              height="162"
+              loading="lazy"
+            />
+          </picture>
+        </li>
+        <li class="marquee-line">
+          <picture class="covers-img">
+            <source
+              srcset="/js_105_1Rendes/assets/cover-card-5@1x-de950cfc.webp 1x, /js_105_1Rendes/assets/cover-card-5@2x-c7deefb5.webp 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/js_105_1Rendes/assets/cover-card-5@1x-de950cfc.webp 1x, /js_105_1Rendes/assets/cover-card-5@2x-c7deefb5.webp 2x"
+              media="(max-width: 767px)"
+            />
+            <img
+              class="basic-img"
+              data-srcset="./img/cover/cover-card-5@1x.webp 1x, ./img/cover/cover-card-5@2x.webp 2x"
+              src="/js_105_1Rendes/assets/cover-card-5@1x-de950cfc.webp"
+              alt="Card-5"
+              width="282"
+              height="162"
+              loading="lazy"
+            />
+          </picture>
+        </li>
+        <li class="marquee-line">
+          <picture class="covers-img">
+            <source
+              srcset="/js_105_1Rendes/assets/cover-card-6@1x-25c01fbc.webp 1x, /js_105_1Rendes/assets/cover-card-6@2x-1d19399d.webp 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/js_105_1Rendes/assets/cover-card-6@1x-25c01fbc.webp 1x, /js_105_1Rendes/assets/cover-card-6@2x-1d19399d.webp 2x"
+              media="(max-width: 767px)"
+            />
+            <img
+              class="basic-img"
+              data-srcset="./img/cover/cover-card-6@1x.webp 1x, ./img/cover/cover-card-6@2x.webp 2x"
+              src="/js_105_1Rendes/assets/cover-card-6@1x-25c01fbc.webp"
+              alt="Card-6"
+              width="282"
+              height="162"
+              loading="lazy"
+            />
+          </picture>
+        </li>
+        <li class="marquee-line">
+          <picture class="covers-img">
+            <source
+              srcset="/js_105_1Rendes/assets/card-7@1x-de7076d0.webp 1x, /js_105_1Rendes/assets/card-7@2x-6eea22f4.webp 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/js_105_1Rendes/assets/card-7@1x-de7076d0.webp 1x, /js_105_1Rendes/assets/card-7@2x-6eea22f4.webp 2x"
+              media="(max-width: 767px)"
+            />
+            <img
+              class="basic-img"
+              data-srcset="./img/cover/card-7@1x.webp 1x, ./img/cover/card-7@2x.webp 2x"
+              src="/js_105_1Rendes/assets/card-7@1x-de7076d0.webp"
+              alt="Card-7"
+              width="282"
+              height="162"
+              loading="lazy"
+            />
+          </picture>
+        </li>
+        <li class="marquee-line">
+          <picture class="covers-img">
+            <source
+              srcset="/js_105_1Rendes/assets/cover-card-8@1x-c86ac0d8.webp 1x, /js_105_1Rendes/assets/cover-card-8@2x-4d531f2c.webp 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/js_105_1Rendes/assets/cover-card-8@1x-c86ac0d8.webp 1x, /js_105_1Rendes/assets/cover-card-8@2x-4d531f2c.webp 2x"
+              media="(max-width: 767px)"
+            />
+            <img
+              class="basic-img"
+              data-srcset="./img/cover/cover-card-8@1x.webp 1x, ./img/cover/cover-card-8@2x.webp 2x"
+              src="/js_105_1Rendes/assets/cover-card-8@1x-c86ac0d8.webp"
+              alt="Card-8"
+              width="282"
+              height="162"
+              loading="lazy"
+            />
+          </picture>
+        </li>
+        <li class="marquee-line">
+          <picture class="covers-img">
+            <source
+              srcset="/js_105_1Rendes/assets/card-9@1x-2a4c46bb.webp 1x, /js_105_1Rendes/assets/card-9@2x-bb4e22cb.webp 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/js_105_1Rendes/assets/card-9@1x-2a4c46bb.webp 1x, /js_105_1Rendes/assets/card-9@2x-bb4e22cb.webp 2x"
+              media="(max-width: 767px)"
+            />
+            <img
+              class="basic-img"
+              data-srcset="./img/cover/card-9@1x.webp 1x, ./img/cover/card-9@2x.webp 2x"
+              src="/js_105_1Rendes/assets/card-9@1x-2a4c46bb.webp"
+              alt="Card-9"
+              width="282"
+              height="162"
+              loading="lazy"
+            />
+          </picture>
+        </li>
+        <li class="marquee-line">
+          <picture class="covers-img">
+            <source
+              srcset="/js_105_1Rendes/assets/card-10@1x-ab52313f.webp 1x, /js_105_1Rendes/assets/card-10@2x-35f3dcb3.webp 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/js_105_1Rendes/assets/card-10@1x-ab52313f.webp 1x, /js_105_1Rendes/assets/card-10@2x-35f3dcb3.webp 2x"
+              media="(max-width: 767px)"
+            />
+            <img
+              class="basic-img"
+              data-srcset="./img/cover/card-10@1x.webp 1x, ./img/cover/card-10@2x.webp 2x"
+              src="/js_105_1Rendes/assets/card-10@1x-ab52313f.webp"
+              alt="Card-10"
+              width="282"
+              height="162"
+              loading="lazy"
+            />
+          </picture>
+        </li>
+      </ul>
+      <ul class="marquee-inner">
+        <li class="marquee-line">
+          <picture class="covers-img">
+            <source
+              srcset="/js_105_1Rendes/assets/card-10@1x-ab52313f.webp 1x, /js_105_1Rendes/assets/card-10@2x-35f3dcb3.webp 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/js_105_1Rendes/assets/card-10@1x-ab52313f.webp 1x, /js_105_1Rendes/assets/card-10@2x-35f3dcb3.webp 2x"
+              media="(max-width: 767px)"
+            />
+            <img
+              class="basic-img"
+              data-srcset="./img/cover/card-10@1x.webp 1x, ./img/cover/card-10@2x.webp 2x"
+              src="/js_105_1Rendes/assets/card-10@1x-ab52313f.webp"
+              alt="Card-10"
+              width="282"
+              height="162"
+              loading="lazy"
+            />
+          </picture>
+        </li>
+        <li class="marquee-line">
+          <picture class="covers-img">
+            <source
+              srcset="/js_105_1Rendes/assets/card-9@1x-2a4c46bb.webp 1x, /js_105_1Rendes/assets/card-9@2x-bb4e22cb.webp 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/js_105_1Rendes/assets/card-9@1x-2a4c46bb.webp 1x, /js_105_1Rendes/assets/card-9@2x-bb4e22cb.webp 2x"
+              media="(max-width: 767px)"
+            />
+            <img
+              class="basic-img"
+              data-srcset="./img/cover/card-9@1x.webp 1x, ./img/cover/card-9@2x.webp 2x"
+              src="/js_105_1Rendes/assets/card-9@1x-2a4c46bb.webp"
+              alt="Card-9"
+              width="282"
+              height="162"
+              loading="lazy"
+            />
+          </picture>
+        </li>
+        <li class="marquee-line">
+          <picture class="covers-img">
+            <source
+              srcset="/js_105_1Rendes/assets/cover-card-8@1x-c86ac0d8.webp 1x, /js_105_1Rendes/assets/cover-card-8@2x-4d531f2c.webp 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/js_105_1Rendes/assets/cover-card-8@1x-c86ac0d8.webp 1x, /js_105_1Rendes/assets/cover-card-8@2x-4d531f2c.webp 2x"
+              media="(max-width: 767px)"
+            />
+            <img
+              class="basic-img"
+              data-srcset="./img/cover/cover-card-8@1x.webp 1x, ./img/cover/cover-card-8@2x.webp 2x"
+              src="/js_105_1Rendes/assets/cover-card-8@1x-c86ac0d8.webp"
+              alt="Card-8"
+              width="282"
+              height="162"
+              loading="lazy"
+            />
+          </picture>
+        </li>
+        <li class="marquee-line">
+          <picture class="covers-img">
+            <source
+              srcset="/js_105_1Rendes/assets/card-7@1x-de7076d0.webp 1x, /js_105_1Rendes/assets/card-7@2x-6eea22f4.webp 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/js_105_1Rendes/assets/card-7@1x-de7076d0.webp 1x, /js_105_1Rendes/assets/card-7@2x-6eea22f4.webp 2x"
+              media="(max-width: 767px)"
+            />
+            <img
+              class="basic-img"
+              data-srcset="./img/cover/card-7@1x.webp 1x, ./img/cover/card-7@2x.webp 2x"
+              src="/js_105_1Rendes/assets/card-7@1x-de7076d0.webp"
+              alt="Card-7"
+              width="282"
+              height="162"
+              loading="lazy"
+            />
+          </picture>
+        </li>
+        <li class="marquee-line">
+          <picture class="covers-img">
+            <source
+              srcset="/js_105_1Rendes/assets/cover-card-6@1x-25c01fbc.webp 1x, /js_105_1Rendes/assets/cover-card-6@2x-1d19399d.webp 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/js_105_1Rendes/assets/cover-card-6@1x-25c01fbc.webp 1x, /js_105_1Rendes/assets/cover-card-6@2x-1d19399d.webp 2x"
+              media="(max-width: 767px)"
+            />
+            <img
+              class="basic-img"
+              data-srcset="./img/cover/cover-card-6@1x.webp 1x, ./img/cover/cover-card-6@2x.webp 2x"
+              src="/js_105_1Rendes/assets/cover-card-6@1x-25c01fbc.webp"
+              alt="Card-6"
+              width="282"
+              height="162"
+              loading="lazy"
+            />
+          </picture>
+        </li>
+        <li class="marquee-line">
+          <picture class="covers-img">
+            <source
+              srcset="/js_105_1Rendes/assets/cover-card-5@1x-de950cfc.webp 1x, /js_105_1Rendes/assets/cover-card-5@2x-c7deefb5.webp 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/js_105_1Rendes/assets/cover-card-5@1x-de950cfc.webp 1x, /js_105_1Rendes/assets/cover-card-5@2x-c7deefb5.webp 2x"
+              media="(max-width: 767px)"
+            />
+            <img
+              class="basic-img"
+              data-srcset="./img/cover/cover-card-5@1x.webp 1x, ./img/cover/cover-card-5@2x.webp 2x"
+              src="/js_105_1Rendes/assets/cover-card-5@1x-de950cfc.webp"
+              alt="Card-5"
+              width="282"
+              height="162"
+              loading="lazy"
+            />
+          </picture>
+        </li>
+        <li class="marquee-line">
+          <picture class="covers-img">
+            <source
+              srcset="/js_105_1Rendes/assets/card-4@1x-46074400.webp 1x, /js_105_1Rendes/assets/card-4@2x-12c11535.webp 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/js_105_1Rendes/assets/card-4@1x-46074400.webp 1x, /js_105_1Rendes/assets/card-4@2x-12c11535.webp 2x"
+              media="(max-width: 767px)"
+            />
+            <img
+              class="basic-img"
+              data-srcset="./img/cover/card-4@1x.webp 1x, ./img/cover/card-4@2x.webp 2x"
+              src="/js_105_1Rendes/assets/card-4@1x-46074400.webp"
+              alt="Card-4"
+              width="282"
+              height="162"
+              loading="lazy"
+            />
+          </picture>
+        </li>
+        <li class="marquee-line">
+          <picture class="covers-img">
+            <source
+              srcset="/js_105_1Rendes/assets/card-3@1x-2b0891ce.webp 1x, /js_105_1Rendes/assets/card-3@2x-69df88f3.webp 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/js_105_1Rendes/assets/card-3@1x-2b0891ce.webp 1x, /js_105_1Rendes/assets/card-3@2x-69df88f3.webp 2x"
+              media="(max-width: 767px)"
+            />
+            <img
+              class="basic-img"
+              data-srcset="./img/cover/card-3@1x.webp 1x, ./img/cover/card-3@2x.webp 2x"
+              src="/js_105_1Rendes/assets/card-3@1x-2b0891ce.webp"
+              alt="Card-3"
+              width="282"
+              height="162"
+              loading="lazy"
+            />
+          </picture>
+        </li>
+        <li class="marquee-line">
+          <picture class="covers-img">
+            <source
+              srcset="/js_105_1Rendes/assets/card-2@1x-00d6caf4.webp 1x, /js_105_1Rendes/assets/card-2@2x-1a9bbd8e.webp 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/js_105_1Rendes/assets/card-2@1x-00d6caf4.webp 1x, /js_105_1Rendes/assets/card-2@2x-1a9bbd8e.webp 2x"
+              media="(max-width: 767px)"
+            />
+            <img
+              class="basic-img"
+              data-srcset="./img/cover/card-2@1x.webp 1x, ./img/cover/card-2@2x.webp 2x"
+              src="/js_105_1Rendes/assets/card-2@1x-00d6caf4.webp"
+              alt="Card-2"
+              width="282"
+              height="162"
+              loading="lazy"
+            />
+          </picture>
+        </li>
+        <li class="marquee-line">
+          <picture class="covers-img">
+            <source
+              srcset="/js_105_1Rendes/assets/card-1@1x-c8388d65.webp 1x, /js_105_1Rendes/assets/card-1@2x-d5b55830.webp 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/js_105_1Rendes/assets/card-1@1x-c8388d65.webp 1x, /js_105_1Rendes/assets/card-1@2x-d5b55830.webp 2x"
+              media="(max-width: 767px)"
+            />
+            <img
+              class="basic-img"
+              data-srcset="./img/cover/card-1@1x.webp 1x, ./img/cover/card-1@2x.webp 2x"
+              src="/js_105_1Rendes/assets/card-1@1x-c8388d65.webp"
+              alt="Card-1"
+              width="282"
+              height="162"
+              loading="lazy"
+            />
+          </picture>
+        </li>
+      </ul>
+      <ul class="marquee-inner">
+        <li class="marquee-line">
+          <picture class="covers-img">
+            <source
+              srcset="/js_105_1Rendes/assets/card-1@1x-c8388d65.webp 1x, /js_105_1Rendes/assets/card-1@2x-d5b55830.webp 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/js_105_1Rendes/assets/card-1@1x-c8388d65.webp 1x, /js_105_1Rendes/assets/card-1@2x-d5b55830.webp 2x"
+              media="(max-width: 767px)"
+            />
+            <img
+              class="basic-img"
+              data-srcset="./img/cover/card-1@1x.webp 1x, ./img/cover/card-1@2x.webp 2x"
+              src="/js_105_1Rendes/assets/card-1@1x-c8388d65.webp"
+              alt="Card-1"
+              width="282"
+              height="162"
+              loading="lazy"
+            />
+          </picture>
+        </li>
+        <li class="marquee-line">
+          <picture class="covers-img">
+            <source
+              srcset="/js_105_1Rendes/assets/card-2@1x-00d6caf4.webp 1x, /js_105_1Rendes/assets/card-2@2x-1a9bbd8e.webp 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/js_105_1Rendes/assets/card-2@1x-00d6caf4.webp 1x, /js_105_1Rendes/assets/card-2@2x-1a9bbd8e.webp 2x"
+              media="(max-width: 767px)"
+            />
+            <img
+              class="basic-img"
+              data-srcset="./img/cover/card-2@1x.webp 1x, ./img/cover/card-2@2x.webp 2x"
+              src="/js_105_1Rendes/assets/card-2@1x-00d6caf4.webp"
+              alt="Card-2"
+              width="282"
+              height="162"
+              loading="lazy"
+            />
+          </picture>
+        </li>
+        <li class="marquee-line">
+          <picture class="covers-img">
+            <source
+              srcset="/js_105_1Rendes/assets/card-3@1x-2b0891ce.webp 1x, /js_105_1Rendes/assets/card-3@2x-69df88f3.webp 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/js_105_1Rendes/assets/card-3@1x-2b0891ce.webp 1x, /js_105_1Rendes/assets/card-3@2x-69df88f3.webp 2x"
+              media="(max-width: 767px)"
+            />
+            <img
+              class="basic-img"
+              data-srcset="./img/cover/card-3@1x.webp 1x, ./img/cover/card-3@2x.webp 2x"
+              src="/js_105_1Rendes/assets/card-3@1x-2b0891ce.webp"
+              alt="Card-3"
+              width="282"
+              height="162"
+              loading="lazy"
+            />
+          </picture>
+        </li>
+        <li class="marquee-line">
+          <picture class="covers-img">
+            <source
+              srcset="/js_105_1Rendes/assets/card-4@1x-46074400.webp 1x, /js_105_1Rendes/assets/card-4@2x-12c11535.webp 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/js_105_1Rendes/assets/card-4@1x-46074400.webp 1x, /js_105_1Rendes/assets/card-4@2x-12c11535.webp 2x"
+              media="(max-width: 767px)"
+            />
+            <img
+              class="basic-img"
+              data-srcset="./img/cover/card-4@1x.webp 1x, ./img/cover/card-4@2x.webp 2x"
+              src="/js_105_1Rendes/assets/card-4@1x-46074400.webp"
+              alt="Card-4"
+              width="282"
+              height="162"
+              loading="lazy"
+            />
+          </picture>
+        </li>
+        <li class="marquee-line">
+          <picture class="covers-img">
+            <source
+              srcset="/js_105_1Rendes/assets/cover-card-5@1x-de950cfc.webp 1x, /js_105_1Rendes/assets/cover-card-5@2x-c7deefb5.webp 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/js_105_1Rendes/assets/cover-card-5@1x-de950cfc.webp 1x, /js_105_1Rendes/assets/cover-card-5@2x-c7deefb5.webp 2x"
+              media="(max-width: 767px)"
+            />
+            <img
+              class="basic-img"
+              data-srcset="./img/cover/cover-card-5@1x.webp 1x, ./img/cover/cover-card-5@2x.webp 2x"
+              src="/js_105_1Rendes/assets/cover-card-5@1x-de950cfc.webp"
+              alt="Card-5"
+              width="282"
+              height="162"
+              loading="lazy"
+            />
+          </picture>
+        </li>
+        <li class="marquee-line">
+          <picture class="covers-img">
+            <source
+              srcset="/js_105_1Rendes/assets/cover-card-6@1x-25c01fbc.webp 1x, /js_105_1Rendes/assets/cover-card-6@2x-1d19399d.webp 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/js_105_1Rendes/assets/cover-card-6@1x-25c01fbc.webp 1x, /js_105_1Rendes/assets/cover-card-6@2x-1d19399d.webp 2x"
+              media="(max-width: 767px)"
+            />
+            <img
+              class="basic-img"
+              data-srcset="./img/cover/cover-card-6@1x.webp 1x, ./img/cover/cover-card-6@2x.webp 2x"
+              src="/js_105_1Rendes/assets/cover-card-6@1x-25c01fbc.webp"
+              alt="Card-6"
+              width="282"
+              height="162"
+              loading="lazy"
+            />
+          </picture>
+        </li>
+        <li class="marquee-line">
+          <picture class="covers-img">
+            <source
+              srcset="/js_105_1Rendes/assets/card-7@1x-de7076d0.webp 1x, /js_105_1Rendes/assets/card-7@2x-6eea22f4.webp 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/js_105_1Rendes/assets/card-7@1x-de7076d0.webp 1x, /js_105_1Rendes/assets/card-7@2x-6eea22f4.webp 2x"
+              media="(max-width: 767px)"
+            />
+            <img
+              class="basic-img"
+              data-srcset="./img/cover/card-7@1x.webp 1x, ./img/cover/card-7@2x.webp 2x"
+              src="/js_105_1Rendes/assets/card-7@1x-de7076d0.webp"
+              alt="Card-7"
+              width="282"
+              height="162"
+              loading="lazy"
+            />
+          </picture>
+        </li>
+        <li class="marquee-line">
+          <picture class="covers-img">
+            <source
+              srcset="/js_105_1Rendes/assets/cover-card-8@1x-c86ac0d8.webp 1x, /js_105_1Rendes/assets/cover-card-8@2x-4d531f2c.webp 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/js_105_1Rendes/assets/cover-card-8@1x-c86ac0d8.webp 1x, /js_105_1Rendes/assets/cover-card-8@2x-4d531f2c.webp 2x"
+              media="(max-width: 767px)"
+            />
+            <img
+              class="basic-img"
+              data-srcset="./img/cover/cover-card-8@1x.webp 1x, ./img/cover/cover-card-8@2x.webp 2x"
+              src="/js_105_1Rendes/assets/cover-card-8@1x-c86ac0d8.webp"
+              alt="Card-8"
+              width="282"
+              height="162"
+              loading="lazy"
+            />
+          </picture>
+        </li>
+        <li class="marquee-line">
+          <picture class="covers-img">
+            <source
+              srcset="/js_105_1Rendes/assets/card-9@1x-2a4c46bb.webp 1x, /js_105_1Rendes/assets/card-9@2x-bb4e22cb.webp 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/js_105_1Rendes/assets/card-9@1x-2a4c46bb.webp 1x, /js_105_1Rendes/assets/card-9@2x-bb4e22cb.webp 2x"
+              media="(max-width: 767px)"
+            />
+            <img
+              class="basic-img"
+              data-srcset="./img/cover/card-9@1x.webp 1x, ./img/cover/card-9@2x.webp 2x"
+              src="/js_105_1Rendes/assets/card-9@1x-2a4c46bb.webp"
+              alt="Card-9"
+              width="282"
+              height="162"
+              loading="lazy"
+            />
+          </picture>
+        </li>
+        <li class="marquee-line">
+          <picture class="covers-img">
+            <source
+              srcset="/js_105_1Rendes/assets/card-10@1x-ab52313f.webp 1x, /js_105_1Rendes/assets/card-10@2x-35f3dcb3.webp 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/js_105_1Rendes/assets/card-10@1x-ab52313f.webp 1x, /js_105_1Rendes/assets/card-10@2x-35f3dcb3.webp 2x"
+              media="(max-width: 767px)"
+            />
+            <img
+              class="basic-img"
+              data-srcset="./img/cover/card-10@1x.webp 1x, ./img/cover/card-10@2x.webp 2x"
+              src="/js_105_1Rendes/assets/card-10@1x-ab52313f.webp"
+              alt="Card-10"
+              width="282"
+              height="162"
+              loading="lazy"
+            />
+          </picture>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container cover-container"></div>
+</section>
+
+    <section class="reviews-section section">
+    <div class="container">
+    <h2 class="reviews-title">Reviews</h2>
+    <div class="reviews-box swiper">
+        <ul class="reviews-list swiper-wrapper"></ul>
+    </div>
+    <div class="review-buttons">
+            <button class="prev-slide" type="button" aria-label="Previous Slide">
+                <svg class="reviews-icon" width="24" height="24">
+                    <use href="/js_105_1Rendes/assets/icons-e18b18b5.svg#arrow-left"></use>
+                </svg>
+            </button>   
+                <button class="next-slide" type="button" aria-label="Next Slide">
+                    <svg class="reviews-icon" width="24" height="24">
+                        <use href="/js_105_1Rendes/assets/icons-e18b18b5.svg#arrow-right"></use>
+                    </svg>
+                </button>
+    </div>
+</div>
+</section>
+
+    <section class="work-together" id="work-together">
+  <div class="footer-container container">
+    <div class="footer-title">
+      <h2 class="footer-title-text">
+        <picture class="footer-titel-img">
+          <source
+            srcset="/js_105_1Rendes/assets/tablet-image-7a79895d.png 1x, /js_105_1Rendes/assets/tablet-image@2x-ce9cfebd.png 2x"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="data:image/png;base64,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 1x, /js_105_1Rendes/assets/mobile-image@2x-9f274051.png 2x"
+            media="(max-width: 767px)"
+          />
+          <img src="data:image/png;base64,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" alt="" />
+        </picture>
+
+        Let’s&nbsp; <span class="footer-title-span">work</span> together
+      </h2>
+    </div>
+    <div>
+      <form class="footer-form" novalidate>
+        <div class="input-div">
+          <div class="form-input">
+            <input
+              type="email"
+              class="footer-form-email"
+              name="userEmail"
+              placeholder="clients@gmail.com"
+              pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+              required
+            />
+            <span class="error-message"></span>
+          </div>
+          <div class="form-input">
+            <input
+              type="text"
+              class="footer-form-comment"
+              name="userComment"
+              placeholder="comments"
+              required
+            />
+            <span class="error-comm-message"></span>
+          </div>
+        </div>
+        <button class="footer-form-button" type="submit">Send</button>
+      </form>
+    </div>
+    <address class="footer-address">
+      <a href="mailto:lloydjefferson@gmail.com" class="footer-address-link"
+        >lloydjefferson@gmail.com</a
+      >
+      <a href="tel:+3801111111111" class="footer-address-link"
+        >+380 11 1111 11 11</a
+      >
+    </address>
+  </div>
+</section>
+
+<!-- ====================== Modal ========================= -->
+
+<div class="footer-modal">
+  <div class="footer-modal-container">
+    <svg class="footer-modal-close-btn-icon" width="22" height="22">
+      <use href="/js_105_1Rendes/assets/icons-e18b18b5.svg#icon-close"></use>
+    </svg>
+    <div class="footer-modal-text-blok">
+      <h3 class="footer-modal-title">
+        Thank you for your interest in cooperation!
+      </h3>
+      <p class="footer-modal-text">
+        The manager will contact you shortly to discuss further details and
+        opportunities for cooperation. Please stay in touch.
+      </p>
+    </div>
+  </div>
+</div>
+
+    
+  </body>
+</html>
